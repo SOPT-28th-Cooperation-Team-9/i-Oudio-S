@@ -9,11 +9,15 @@ import UIKit
 
 class AudioHomeVC: UIViewController {
 
+    var name: String = "혜령"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    
     
 
     /*
