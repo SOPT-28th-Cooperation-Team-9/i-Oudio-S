@@ -15,6 +15,10 @@
 		3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0F9C264FA92800AB9405 /* LaunchScreen.storyboard */; };
 		3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */; };
 		3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */; };
+		4F831E05265032C800676684 /* audio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E04265032C800676684 /* audio.storyboard */; };
+		4F831E2A26505C0A00676684 /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E2826505C0A00676684 /* HomeTVC.swift */; };
+		4F831E2B26505C0A00676684 /* HomeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E2926505C0A00676684 /* HomeTVC.xib */; };
+		4F831E312650655A00676684 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E302650655A00676684 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +29,13 @@
 		3C0E0F98264FA92700AB9405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C0E0F9A264FA92800AB9405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C0E0F9D264FA92800AB9405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3C0E0F9F264FA92800AB9405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C0E0F9F264FA92800AB9405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "i-Oudio-S/Resource/Info.plist"; sourceTree = SOURCE_ROOT; };
 		3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHomeVC.swift; sourceTree = "<group>"; };
 		3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Audio.storyboard; sourceTree = "<group>"; };
+		4F831E04265032C800676684 /* audio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = audio.storyboard; sourceTree = "<group>"; };
+		4F831E2826505C0A00676684 /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
+		4F831E2926505C0A00676684 /* HomeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTVC.xib; sourceTree = "<group>"; };
+		4F831E302650655A00676684 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,9 @@
 		3C0E0FA6264FAAA300AB9405 /* JinseokScene */ = {
 			isa = PBXGroup;
 			children = (
+				4F831E012650327500676684 /* Model */,
+				4F831DFF2650326900676684 /* View */,
+				4F831E04265032C800676684 /* audio.storyboard */,
 			);
 			path = JinseokScene;
 			sourceTree = "<group>";
@@ -145,6 +156,39 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		4F831DFF2650326900676684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E032650329A00676684 /* VC */,
+				4F831E022650329400676684 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F831E012650327500676684 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F831E022650329400676684 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E2826505C0A00676684 /* HomeTVC.swift */,
+				4F831E2926505C0A00676684 /* HomeTVC.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4F831E032650329A00676684 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E302650655A00676684 /* HomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,7 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */,
+				4F831E2B26505C0A00676684 /* HomeTVC.xib in Resources */,
 				3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */,
+				4F831E05265032C800676684 /* audio.storyboard in Resources */,
 				3C0E0F9B264FA92800AB9405 /* Assets.xcassets in Resources */,
 				3C0E0F99264FA92700AB9405 /* Main.storyboard in Resources */,
 			);
@@ -219,7 +265,9 @@
 				3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */,
 				3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */,
 				3C0E0F92264FA92700AB9405 /* AppDelegate.swift in Sources */,
+				4F831E312650655A00676684 /* HomeVC.swift in Sources */,
 				3C0E0F94264FA92700AB9405 /* SceneDelegate.swift in Sources */,
+				4F831E2A26505C0A00676684 /* HomeTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +416,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8A843466G;
-				INFOPLIST_FILE = "i-Oudio-S/Info.plist";
+				INFOPLIST_FILE = "i-Oudio-S/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,7 +435,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8A843466G;
-				INFOPLIST_FILE = "i-Oudio-S/Info.plist";
+				INFOPLIST_FILE = "i-Oudio-S/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
