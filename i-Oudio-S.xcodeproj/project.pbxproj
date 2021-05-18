@@ -10,11 +10,29 @@
 		3C0E0F92264FA92700AB9405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0F91264FA92700AB9405 /* AppDelegate.swift */; };
 		3C0E0F94264FA92700AB9405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0F93264FA92700AB9405 /* SceneDelegate.swift */; };
 		3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0F95264FA92700AB9405 /* ViewController.swift */; };
-		3C0E0F99264FA92700AB9405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0F97264FA92700AB9405 /* Main.storyboard */; };
 		3C0E0F9B264FA92800AB9405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0F9A264FA92800AB9405 /* Assets.xcassets */; };
 		3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0F9C264FA92800AB9405 /* LaunchScreen.storyboard */; };
 		3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */; };
 		3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */; };
+		AA4DC8F126518187009FA74B /* AudioStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC8F026518187009FA74B /* AudioStoryboard.storyboard */; };
+		AA4DC90826519254009FA74B /* AudioMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC90726519254009FA74B /* AudioMainVC.swift */; };
+		AA4DC9152651A85C009FA74B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC9142651A85C009FA74B /* Main.storyboard */; };
+		AA4DC919265232F1009FA74B /* HeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC917265232F1009FA74B /* HeaderTVC.swift */; };
+		AA4DC91A265232F1009FA74B /* HeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC918265232F1009FA74B /* HeaderTVC.xib */; };
+		AA4DC92626525DB6009FA74B /* LineSpacing+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC92526525DB6009FA74B /* LineSpacing+UILabel.swift */; };
+		AA4DC9332652670C009FA74B /* BookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC9312652670C009FA74B /* BookTVC.swift */; };
+		AA4DC9342652670C009FA74B /* BookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC9322652670C009FA74B /* BookTVC.xib */; };
+		AA4DC94726526C52009FA74B /* BookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC94526526C52009FA74B /* BookCVC.swift */; };
+		AA4DC94826526C52009FA74B /* BookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC94626526C52009FA74B /* BookCVC.xib */; };
+		AA4DC94C2652D265009FA74B /* BookDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC94B2652D265009FA74B /* BookDataModel.swift */; };
+		AA4DC95326537D47009FA74B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC95226537D47009FA74B /* Home.storyboard */; };
+		AA4DC95626537D57009FA74B /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC95526537D57009FA74B /* My.storyboard */; };
+		AA4DC95926537DE7009FA74B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC95826537DE7009FA74B /* HomeVC.swift */; };
+		AA4DC95C26537DF4009FA74B /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC95B26537DF4009FA74B /* MyVC.swift */; };
+		AA4DC96126538804009FA74B /* SnsBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC95F26538804009FA74B /* SnsBookTVC.swift */; };
+		AA4DC96226538804009FA74B /* SnsBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC96026538804009FA74B /* SnsBookTVC.xib */; };
+		AA4DC96A26538E1A009FA74B /* SnsBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */; };
+		AA4DC96B26538E1A009FA74B /* SnsBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +40,30 @@
 		3C0E0F91264FA92700AB9405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C0E0F93264FA92700AB9405 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3C0E0F95264FA92700AB9405 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3C0E0F98264FA92700AB9405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C0E0F9A264FA92800AB9405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C0E0F9D264FA92800AB9405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C0E0F9F264FA92800AB9405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHomeVC.swift; sourceTree = "<group>"; };
 		3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Audio.storyboard; sourceTree = "<group>"; };
+		AA4DC8F026518187009FA74B /* AudioStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AudioStoryboard.storyboard; sourceTree = "<group>"; };
+		AA4DC90726519254009FA74B /* AudioMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMainVC.swift; sourceTree = "<group>"; };
+		AA4DC9142651A85C009FA74B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../Main.storyboard; sourceTree = "<group>"; };
+		AA4DC917265232F1009FA74B /* HeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTVC.swift; sourceTree = "<group>"; };
+		AA4DC918265232F1009FA74B /* HeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTVC.xib; sourceTree = "<group>"; };
+		AA4DC92526525DB6009FA74B /* LineSpacing+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LineSpacing+UILabel.swift"; sourceTree = "<group>"; };
+		AA4DC9312652670C009FA74B /* BookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTVC.swift; sourceTree = "<group>"; };
+		AA4DC9322652670C009FA74B /* BookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookTVC.xib; sourceTree = "<group>"; };
+		AA4DC94526526C52009FA74B /* BookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCVC.swift; sourceTree = "<group>"; };
+		AA4DC94626526C52009FA74B /* BookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCVC.xib; sourceTree = "<group>"; };
+		AA4DC94B2652D265009FA74B /* BookDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDataModel.swift; sourceTree = "<group>"; };
+		AA4DC95226537D47009FA74B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		AA4DC95526537D57009FA74B /* My.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
+		AA4DC95826537DE7009FA74B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		AA4DC95B26537DF4009FA74B /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
+		AA4DC95F26538804009FA74B /* SnsBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnsBookTVC.swift; sourceTree = "<group>"; };
+		AA4DC96026538804009FA74B /* SnsBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnsBookTVC.xib; sourceTree = "<group>"; };
+		AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnsBookCVC.swift; sourceTree = "<group>"; };
+		AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnsBookCVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +99,7 @@
 				3C0E0FA9264FAAE500AB9405 /* Source */,
 				3C0E0FA8264FAADC00AB9405 /* Resource */,
 				3C0E0F95264FA92700AB9405 /* ViewController.swift */,
-				3C0E0F97264FA92700AB9405 /* Main.storyboard */,
+				AA4DC9142651A85C009FA74B /* Main.storyboard */,
 			);
 			path = "i-Oudio-S";
 			sourceTree = "<group>";
@@ -71,6 +107,12 @@
 		3C0E0FA5264FAA6D00AB9405 /* YejiScene */ = {
 			isa = PBXGroup;
 			children = (
+				AA4DC92226525C89009FA74B /* extension */,
+				AA4DC8EF26517F55009FA74B /* Model */,
+				AA4DC8EE26517E78009FA74B /* View */,
+				AA4DC95226537D47009FA74B /* Home.storyboard */,
+				AA4DC95526537D57009FA74B /* My.storyboard */,
+				AA4DC8F026518187009FA74B /* AudioStoryboard.storyboard */,
 			);
 			path = YejiScene;
 			sourceTree = "<group>";
@@ -145,6 +187,58 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		AA4DC8EE26517E78009FA74B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA4DC90626519217009FA74B /* Cell */,
+				AA4DC9052651920B009FA74B /* VC */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA4DC8EF26517F55009FA74B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA4DC94B2652D265009FA74B /* BookDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA4DC9052651920B009FA74B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				AA4DC90726519254009FA74B /* AudioMainVC.swift */,
+				AA4DC95826537DE7009FA74B /* HomeVC.swift */,
+				AA4DC95B26537DF4009FA74B /* MyVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		AA4DC90626519217009FA74B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AA4DC917265232F1009FA74B /* HeaderTVC.swift */,
+				AA4DC918265232F1009FA74B /* HeaderTVC.xib */,
+				AA4DC9312652670C009FA74B /* BookTVC.swift */,
+				AA4DC9322652670C009FA74B /* BookTVC.xib */,
+				AA4DC94526526C52009FA74B /* BookCVC.swift */,
+				AA4DC94626526C52009FA74B /* BookCVC.xib */,
+				AA4DC95F26538804009FA74B /* SnsBookTVC.swift */,
+				AA4DC96026538804009FA74B /* SnsBookTVC.xib */,
+				AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */,
+				AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AA4DC92226525C89009FA74B /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				AA4DC92526525DB6009FA74B /* LineSpacing+UILabel.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,9 +297,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */,
+				AA4DC94826526C52009FA74B /* BookCVC.xib in Resources */,
+				AA4DC9152651A85C009FA74B /* Main.storyboard in Resources */,
+				AA4DC95326537D47009FA74B /* Home.storyboard in Resources */,
+				AA4DC95626537D57009FA74B /* My.storyboard in Resources */,
+				AA4DC9342652670C009FA74B /* BookTVC.xib in Resources */,
+				AA4DC96226538804009FA74B /* SnsBookTVC.xib in Resources */,
+				AA4DC91A265232F1009FA74B /* HeaderTVC.xib in Resources */,
 				3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */,
+				AA4DC8F126518187009FA74B /* AudioStoryboard.storyboard in Resources */,
 				3C0E0F9B264FA92800AB9405 /* Assets.xcassets in Resources */,
-				3C0E0F99264FA92700AB9405 /* Main.storyboard in Resources */,
+				AA4DC96B26538E1A009FA74B /* SnsBookCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,22 +320,24 @@
 			files = (
 				3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */,
 				3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */,
+				AA4DC94C2652D265009FA74B /* BookDataModel.swift in Sources */,
+				AA4DC9332652670C009FA74B /* BookTVC.swift in Sources */,
+				AA4DC919265232F1009FA74B /* HeaderTVC.swift in Sources */,
 				3C0E0F92264FA92700AB9405 /* AppDelegate.swift in Sources */,
+				AA4DC90826519254009FA74B /* AudioMainVC.swift in Sources */,
+				AA4DC95C26537DF4009FA74B /* MyVC.swift in Sources */,
+				AA4DC96A26538E1A009FA74B /* SnsBookCVC.swift in Sources */,
+				AA4DC96126538804009FA74B /* SnsBookTVC.swift in Sources */,
 				3C0E0F94264FA92700AB9405 /* SceneDelegate.swift in Sources */,
+				AA4DC95926537DE7009FA74B /* HomeVC.swift in Sources */,
+				AA4DC92626525DB6009FA74B /* LineSpacing+UILabel.swift in Sources */,
+				AA4DC94726526C52009FA74B /* BookCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3C0E0F97264FA92700AB9405 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C0E0F98264FA92700AB9405 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3C0E0F9C264FA92800AB9405 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -368,7 +472,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8A843466G;
-				INFOPLIST_FILE = "i-Oudio-S/Info.plist";
+				INFOPLIST_FILE = "i-Oudio-S/Resource/info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,7 +492,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8A843466G;
-				INFOPLIST_FILE = "i-Oudio-S/Info.plist";
+				INFOPLIST_FILE = "i-Oudio-S/Resource/info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
