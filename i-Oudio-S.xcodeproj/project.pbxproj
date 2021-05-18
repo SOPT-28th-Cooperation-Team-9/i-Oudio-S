@@ -13,17 +13,29 @@
 		3C0E0F99264FA92700AB9405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0F97264FA92700AB9405 /* Main.storyboard */; };
 		3C0E0F9B264FA92800AB9405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0F9A264FA92800AB9405 /* Assets.xcassets */; };
 		3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0F9C264FA92800AB9405 /* LaunchScreen.storyboard */; };
-		3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */; };
-		3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */; };
+		3C0E0FAB264FAB2400AB9405 /* AudioBookHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAA264FAB2400AB9405 /* AudioBookHomeVC.swift */; };
+		3C0E0FAD264FAB3500AB9405 /* HRAudio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAC264FAB3500AB9405 /* HRAudio.storyboard */; };
 		3C20080C2652B7F800C0FAAF /* Extentions+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20080B2652B7F800C0FAAF /* Extentions+UIColor.swift */; };
 		3C2008162652BD2400C0FAAF /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C20080F2652BD2400C0FAAF /* NotoSansKR-Light.otf */; };
 		3C2008172652BD2400C0FAAF /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008102652BD2400C0FAAF /* NotoSansKR-Bold.otf */; };
 		3C2008182652BD2400C0FAAF /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008112652BD2400C0FAAF /* NotoSansKR-Thin.otf */; };
 		3C2008192652BD2400C0FAAF /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008122652BD2400C0FAAF /* OFL.txt */; };
 		3C20081A2652BD2400C0FAAF /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008132652BD2400C0FAAF /* NotoSansKR-Black.otf */; };
-		3C20081B2652BD2400C0FAAF /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008142652BD2400C0FAAF /* NotoSansKR-Medium.otf */; };
 		3C20081C2652BD2400C0FAAF /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008152652BD2400C0FAAF /* NotoSansKR-Regular.otf */; };
-		3C20081E2652BD4100C0FAAF /* Extentions+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */; };
+		3C383DD4265387BF00C47952 /* Extentions+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */; };
+		3C383DD72653892100C47952 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C383DD5265388B200C47952 /* NotoSansKR-Medium.otf */; };
+		3C383DDA26539C7900C47952 /* TopicBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C383DD826539C7900C47952 /* TopicBookTVC.swift */; };
+		3C383DDB26539C7900C47952 /* TopicBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C383DD926539C7900C47952 /* TopicBookTVC.xib */; };
+		3C383DDE26539D3B00C47952 /* TopicBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C383DDC26539D3B00C47952 /* TopicBookCVC.swift */; };
+		3C383DDF26539D3B00C47952 /* TopicBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C383DDD26539D3B00C47952 /* TopicBookCVC.xib */; };
+		3C383DE126539EC600C47952 /* TopicBookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C383DE026539EC600C47952 /* TopicBookData.swift */; };
+		3C8112B5265355AB0063AF30 /* AudioHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8112B3265355AB0063AF30 /* AudioHeaderTVC.swift */; };
+		3C8112B6265355AB0063AF30 /* AudioHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8112B4265355AB0063AF30 /* AudioHeaderTVC.xib */; };
+		3C8112BC26535F2C0063AF30 /* BasicBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8112BA26535F2C0063AF30 /* BasicBookTVC.swift */; };
+		3C8112BD26535F2C0063AF30 /* BasicBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8112BB26535F2C0063AF30 /* BasicBookTVC.xib */; };
+		3C8112C1265362C50063AF30 /* BasicBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8112BF265362C50063AF30 /* BasicBookCVC.swift */; };
+		3C8112C2265362C50063AF30 /* BasicBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8112C0265362C50063AF30 /* BasicBookCVC.xib */; };
+		3C8112CE26536B9F0063AF30 /* BasicBookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8112CD26536B9F0063AF30 /* BasicBookData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,17 +47,29 @@
 		3C0E0F9A264FA92800AB9405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C0E0F9D264FA92800AB9405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C0E0F9F264FA92800AB9405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHomeVC.swift; sourceTree = "<group>"; };
-		3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Audio.storyboard; sourceTree = "<group>"; };
+		3C0E0FAA264FAB2400AB9405 /* AudioBookHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBookHomeVC.swift; sourceTree = "<group>"; };
+		3C0E0FAC264FAB3500AB9405 /* HRAudio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HRAudio.storyboard; sourceTree = "<group>"; };
 		3C20080B2652B7F800C0FAAF /* Extentions+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions+UIColor.swift"; sourceTree = "<group>"; };
 		3C20080F2652BD2400C0FAAF /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
 		3C2008102652BD2400C0FAAF /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		3C2008112652BD2400C0FAAF /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
 		3C2008122652BD2400C0FAAF /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		3C2008132652BD2400C0FAAF /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
-		3C2008142652BD2400C0FAAF /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		3C2008152652BD2400C0FAAF /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions+UIFont.swift"; sourceTree = "<group>"; };
+		3C383DD5265388B200C47952 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		3C383DD826539C7900C47952 /* TopicBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookTVC.swift; sourceTree = "<group>"; };
+		3C383DD926539C7900C47952 /* TopicBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicBookTVC.xib; sourceTree = "<group>"; };
+		3C383DDC26539D3B00C47952 /* TopicBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookCVC.swift; sourceTree = "<group>"; };
+		3C383DDD26539D3B00C47952 /* TopicBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicBookCVC.xib; sourceTree = "<group>"; };
+		3C383DE026539EC600C47952 /* TopicBookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookData.swift; sourceTree = "<group>"; };
+		3C8112B3265355AB0063AF30 /* AudioHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHeaderTVC.swift; sourceTree = "<group>"; };
+		3C8112B4265355AB0063AF30 /* AudioHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioHeaderTVC.xib; sourceTree = "<group>"; };
+		3C8112BA26535F2C0063AF30 /* BasicBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBookTVC.swift; sourceTree = "<group>"; };
+		3C8112BB26535F2C0063AF30 /* BasicBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicBookTVC.xib; sourceTree = "<group>"; };
+		3C8112BF265362C50063AF30 /* BasicBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBookCVC.swift; sourceTree = "<group>"; };
+		3C8112C0265362C50063AF30 /* BasicBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicBookCVC.xib; sourceTree = "<group>"; };
+		3C8112CD26536B9F0063AF30 /* BasicBookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBookData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +127,9 @@
 		3C0E0FA7264FAABF00AB9405 /* HeyryeongScene */ = {
 			isa = PBXGroup;
 			children = (
+				3C8112CC26536B930063AF30 /* Model */,
 				3C0E0FAF264FAB4400AB9405 /* View */,
-				3C0E0FAE264FAB3F00AB9405 /* Model */,
-				3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */,
+				3C0E0FAC264FAB3500AB9405 /* HRAudio.storyboard */,
 			);
 			path = HeyryeongScene;
 			sourceTree = "<group>";
@@ -134,13 +158,6 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		3C0E0FAE264FAB3F00AB9405 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		3C0E0FAF264FAB4400AB9405 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +170,7 @@
 		3C0E0FB0264FAB4C00AB9405 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */,
+				3C0E0FAA264FAB2400AB9405 /* AudioBookHomeVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -161,6 +178,16 @@
 		3C0E0FB1264FAB5400AB9405 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				3C8112B3265355AB0063AF30 /* AudioHeaderTVC.swift */,
+				3C8112B4265355AB0063AF30 /* AudioHeaderTVC.xib */,
+				3C8112BA26535F2C0063AF30 /* BasicBookTVC.swift */,
+				3C8112BB26535F2C0063AF30 /* BasicBookTVC.xib */,
+				3C8112BF265362C50063AF30 /* BasicBookCVC.swift */,
+				3C8112C0265362C50063AF30 /* BasicBookCVC.xib */,
+				3C383DD826539C7900C47952 /* TopicBookTVC.swift */,
+				3C383DD926539C7900C47952 /* TopicBookTVC.xib */,
+				3C383DDC26539D3B00C47952 /* TopicBookCVC.swift */,
+				3C383DDD26539D3B00C47952 /* TopicBookCVC.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -185,15 +212,24 @@
 		3C20080E2652BD2400C0FAAF /* Noto_Sans_KR */ = {
 			isa = PBXGroup;
 			children = (
+				3C383DD5265388B200C47952 /* NotoSansKR-Medium.otf */,
 				3C20080F2652BD2400C0FAAF /* NotoSansKR-Light.otf */,
 				3C2008102652BD2400C0FAAF /* NotoSansKR-Bold.otf */,
 				3C2008112652BD2400C0FAAF /* NotoSansKR-Thin.otf */,
 				3C2008122652BD2400C0FAAF /* OFL.txt */,
 				3C2008132652BD2400C0FAAF /* NotoSansKR-Black.otf */,
-				3C2008142652BD2400C0FAAF /* NotoSansKR-Medium.otf */,
 				3C2008152652BD2400C0FAAF /* NotoSansKR-Regular.otf */,
 			);
 			path = Noto_Sans_KR;
+			sourceTree = "<group>";
+		};
+		3C8112CC26536B930063AF30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C8112CD26536B9F0063AF30 /* BasicBookData.swift */,
+				3C383DE026539EC600C47952 /* TopicBookData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,17 +289,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8112BD26535F2C0063AF30 /* BasicBookTVC.xib in Resources */,
 				3C20081C2652BD2400C0FAAF /* NotoSansKR-Regular.otf in Resources */,
+				3C383DD72653892100C47952 /* NotoSansKR-Medium.otf in Resources */,
 				3C20081A2652BD2400C0FAAF /* NotoSansKR-Black.otf in Resources */,
 				3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */,
-				3C20081B2652BD2400C0FAAF /* NotoSansKR-Medium.otf in Resources */,
 				3C2008182652BD2400C0FAAF /* NotoSansKR-Thin.otf in Resources */,
 				3C2008162652BD2400C0FAAF /* NotoSansKR-Light.otf in Resources */,
-				3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */,
+				3C383DDF26539D3B00C47952 /* TopicBookCVC.xib in Resources */,
+				3C383DDB26539C7900C47952 /* TopicBookTVC.xib in Resources */,
+				3C0E0FAD264FAB3500AB9405 /* HRAudio.storyboard in Resources */,
 				3C0E0F9B264FA92800AB9405 /* Assets.xcassets in Resources */,
 				3C2008172652BD2400C0FAAF /* NotoSansKR-Bold.otf in Resources */,
 				3C2008192652BD2400C0FAAF /* OFL.txt in Resources */,
 				3C0E0F99264FA92700AB9405 /* Main.storyboard in Resources */,
+				3C8112C2265362C50063AF30 /* BasicBookCVC.xib in Resources */,
+				3C8112B6265355AB0063AF30 /* AudioHeaderTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +315,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */,
+				3C383DE126539EC600C47952 /* TopicBookData.swift in Sources */,
+				3C0E0FAB264FAB2400AB9405 /* AudioBookHomeVC.swift in Sources */,
 				3C20080C2652B7F800C0FAAF /* Extentions+UIColor.swift in Sources */,
 				3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */,
 				3C0E0F92264FA92700AB9405 /* AppDelegate.swift in Sources */,
 				3C0E0F94264FA92700AB9405 /* SceneDelegate.swift in Sources */,
-				3C20081E2652BD4100C0FAAF /* Extentions+UIFont.swift in Sources */,
+				3C8112B5265355AB0063AF30 /* AudioHeaderTVC.swift in Sources */,
+				3C383DDA26539C7900C47952 /* TopicBookTVC.swift in Sources */,
+				3C8112CE26536B9F0063AF30 /* BasicBookData.swift in Sources */,
+				3C8112C1265362C50063AF30 /* BasicBookCVC.swift in Sources */,
+				3C8112BC26535F2C0063AF30 /* BasicBookTVC.swift in Sources */,
+				3C383DD4265387BF00C47952 /* Extentions+UIFont.swift in Sources */,
+				3C383DDE26539D3B00C47952 /* TopicBookCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +409,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -414,7 +463,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
