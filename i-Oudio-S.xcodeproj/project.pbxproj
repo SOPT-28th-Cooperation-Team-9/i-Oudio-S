@@ -15,6 +15,15 @@
 		3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0F9C264FA92800AB9405 /* LaunchScreen.storyboard */; };
 		3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */; };
 		3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */; };
+		3C20080C2652B7F800C0FAAF /* Extentions+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20080B2652B7F800C0FAAF /* Extentions+UIColor.swift */; };
+		3C2008162652BD2400C0FAAF /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C20080F2652BD2400C0FAAF /* NotoSansKR-Light.otf */; };
+		3C2008172652BD2400C0FAAF /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008102652BD2400C0FAAF /* NotoSansKR-Bold.otf */; };
+		3C2008182652BD2400C0FAAF /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008112652BD2400C0FAAF /* NotoSansKR-Thin.otf */; };
+		3C2008192652BD2400C0FAAF /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008122652BD2400C0FAAF /* OFL.txt */; };
+		3C20081A2652BD2400C0FAAF /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008132652BD2400C0FAAF /* NotoSansKR-Black.otf */; };
+		3C20081B2652BD2400C0FAAF /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008142652BD2400C0FAAF /* NotoSansKR-Medium.otf */; };
+		3C20081C2652BD2400C0FAAF /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008152652BD2400C0FAAF /* NotoSansKR-Regular.otf */; };
+		3C20081E2652BD4100C0FAAF /* Extentions+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */; };
 		4F7A07542652D86700206472 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A07532652D86700206472 /* TabbarController.swift */; };
 		4F831E4A26518A6200676684 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E4926518A6200676684 /* HomeVC.swift */; };
 		4F831E4C26518A6E00676684 /* Jinseok.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E4B26518A6E00676684 /* Jinseok.storyboard */; };
@@ -58,6 +67,15 @@
 		4F831E6D265247A200676684 /* LargeCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeCVC.xib; sourceTree = "<group>"; };
 		4F831E74265254E200676684 /* RoundCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCVC.swift; sourceTree = "<group>"; };
 		4F831E75265254E200676684 /* RoundCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundCVC.xib; sourceTree = "<group>"; };
+		3C20080B2652B7F800C0FAAF /* Extentions+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions+UIColor.swift"; sourceTree = "<group>"; };
+		3C20080F2652BD2400C0FAAF /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		3C2008102652BD2400C0FAAF /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		3C2008112652BD2400C0FAAF /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		3C2008122652BD2400C0FAAF /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		3C2008132652BD2400C0FAAF /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		3C2008142652BD2400C0FAAF /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		3C2008152652BD2400C0FAAF /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions+UIFont.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +146,7 @@
 		3C0E0FA8264FAADC00AB9405 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3C20080D2652BD2400C0FAAF /* Font */,
 				3C0E0F91264FA92700AB9405 /* AppDelegate.swift */,
 				3C0E0F93264FA92700AB9405 /* SceneDelegate.swift */,
 				3C0E0F9A264FA92800AB9405 /* Assets.xcassets */,
@@ -140,6 +159,7 @@
 		3C0E0FA9264FAAE500AB9405 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3C20080A2652B7D400C0FAAF /* GeneralExtensions */,
 				3C0E0FA7264FAABF00AB9405 /* HeyryeongScene */,
 				3C0E0FA6264FAAA300AB9405 /* JinseokScene */,
 				3C0E0FA5264FAA6D00AB9405 /* YejiScene */,
@@ -262,6 +282,37 @@
 			path = DiscountBook;
 			sourceTree = "<group>";
 		};
+		3C20080A2652B7D400C0FAAF /* GeneralExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C20080B2652B7F800C0FAAF /* Extentions+UIColor.swift */,
+				3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */,
+			);
+			path = GeneralExtensions;
+			sourceTree = "<group>";
+		};
+		3C20080D2652BD2400C0FAAF /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				3C20080E2652BD2400C0FAAF /* Noto_Sans_KR */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		3C20080E2652BD2400C0FAAF /* Noto_Sans_KR */ = {
+			isa = PBXGroup;
+			children = (
+				3C20080F2652BD2400C0FAAF /* NotoSansKR-Light.otf */,
+				3C2008102652BD2400C0FAAF /* NotoSansKR-Bold.otf */,
+				3C2008112652BD2400C0FAAF /* NotoSansKR-Thin.otf */,
+				3C2008122652BD2400C0FAAF /* OFL.txt */,
+				3C2008132652BD2400C0FAAF /* NotoSansKR-Black.otf */,
+				3C2008142652BD2400C0FAAF /* NotoSansKR-Medium.otf */,
+				3C2008152652BD2400C0FAAF /* NotoSansKR-Regular.otf */,
+			);
+			path = Noto_Sans_KR;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,7 +370,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C20081C2652BD2400C0FAAF /* NotoSansKR-Regular.otf in Resources */,
+				3C20081A2652BD2400C0FAAF /* NotoSansKR-Black.otf in Resources */,
 				3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */,
+				3C20081B2652BD2400C0FAAF /* NotoSansKR-Medium.otf in Resources */,
+				3C2008182652BD2400C0FAAF /* NotoSansKR-Thin.otf in Resources */,
+				3C2008162652BD2400C0FAAF /* NotoSansKR-Light.otf in Resources */,
 				3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */,
 				4F831E77265254E200676684 /* RoundCVC.xib in Resources */,
 				4F831E65265197F700676684 /* AudioTVC.xib in Resources */,
@@ -328,6 +384,8 @@
 				4F831E612651911100676684 /* TrendTVC.xib in Resources */,
 				4F831E5D26518FA400676684 /* DiscountTVC.xib in Resources */,
 				3C0E0F9B264FA92800AB9405 /* Assets.xcassets in Resources */,
+				3C2008172652BD2400C0FAAF /* NotoSansKR-Bold.otf in Resources */,
+				3C2008192652BD2400C0FAAF /* OFL.txt in Resources */,
 				4F831E6F265247A300676684 /* LargeCVC.xib in Resources */,
 				3C0E0F99264FA92700AB9405 /* Main.storyboard in Resources */,
 			);
@@ -342,6 +400,7 @@
 			files = (
 				4F831E76265254E200676684 /* RoundCVC.swift in Sources */,
 				3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */,
+				3C20080C2652B7F800C0FAAF /* Extentions+UIColor.swift in Sources */,
 				4F7A07542652D86700206472 /* TabbarController.swift in Sources */,
 				4F831E6826519FB700676684 /* SmallCVC.swift in Sources */,
 				4F831E602651911100676684 /* TrendTVC.swift in Sources */,
@@ -352,6 +411,7 @@
 				4F831E64265197F700676684 /* AudioTVC.swift in Sources */,
 				4F831E6E265247A300676684 /* LargeCVC.swift in Sources */,
 				3C0E0F94264FA92700AB9405 /* SceneDelegate.swift in Sources */,
+				3C20081E2652BD4100C0FAAF /* Extentions+UIFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +560,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8A843466G;
-				INFOPLIST_FILE = "/Users/hongjinseok/ios/i-Oudio-S/i-Oudio-S/Resource/Info.plist";
+				INFOPLIST_FILE = "i-Oudio-S/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,7 +579,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8A843466G;
-				INFOPLIST_FILE = "/Users/hongjinseok/ios/i-Oudio-S/i-Oudio-S/Resource/Info.plist";
+				INFOPLIST_FILE = "i-Oudio-S/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
