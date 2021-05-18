@@ -16,13 +16,14 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        mainTV.tableFooterView = UIView()
         mainTV.tableHeaderView = mainTHV
-        //mainTV.separatorStyle = .none
+        mainTV.separatorStyle = .none
         mainTV.rowHeight = UITableView.automaticDimension
-        mainTV.register(UINib(nibName: "SmallTVC", bundle: nil), forCellReuseIdentifier: "SmallTVC")
-        mainTV.register(UINib(nibName: "LargeTVC", bundle: nil), forCellReuseIdentifier: "LargeTVC")
-        mainTV.register(UINib(nibName: "RoundTVC", bundle: nil), forCellReuseIdentifier: "RoundTVC")
+        mainTV.register(UINib(nibName: DiscountTVC.identifier, bundle: nil), forCellReuseIdentifier: DiscountTVC.identifier)
+        mainTV.register(UINib(nibName: TrendTVC.identifier, bundle: nil), forCellReuseIdentifier: TrendTVC.identifier)
+        mainTV.register(UINib(nibName: AudioTVC.identifier, bundle: nil), forCellReuseIdentifier: AudioTVC.identifier)
+
         
         mainTV.delegate = self
         mainTV.dataSource = self
@@ -31,15 +32,14 @@ class HomeVC: UIViewController {
     // MARK: - Navigation
 }
 
-extension HomeVC : UITableViewDelegate{
+extension HomeVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row{
-        case 0: return 300
+        case 0: return 314
         case 1: return 262
-        case 2: return 136
-        case 3: return 300
-        default:
-            return 0
+        case 2: return 164
+        case 3: return 314
+        default: return 0
         }
     }
 }
@@ -53,23 +53,25 @@ extension HomeVC : UITableViewDataSource{
         
         switch indexPath.row{
         case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SmallTVC", for: indexPath) as! SmallTVC
+            let cell = tableView.dequeueReusableCell(withIdentifier: DiscountTVC.identifier, for: indexPath) as! DiscountTVC
             cell.title.text = sections[indexPath.row]
             return cell
             
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "LargeTVC", for: indexPath) as! LargeTVC
+            let cell = tableView.dequeueReusableCell(withIdentifier: TrendTVC.identifier, for: indexPath) as! TrendTVC
             cell.title.text = sections[indexPath.row]
             return cell
             
         case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "RoundTVC", for: indexPath) as! RoundTVC
+            let cell = tableView.dequeueReusableCell(withIdentifier: AudioTVC.identifier, for: indexPath) as! AudioTVC
             cell.title.text = sections[indexPath.row]
             return cell
             
         case 3:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SmallTVC", for: indexPath) as! SmallTVC
+            let cell = tableView.dequeueReusableCell(withIdentifier: DiscountTVC.identifier, for: indexPath) as! DiscountTVC
             cell.title.text = sections[indexPath.row]
+            cell.contentView.backgroundColor = .black
+            cell.collectionView.backgroundColor = .black
             return cell
             
         default:

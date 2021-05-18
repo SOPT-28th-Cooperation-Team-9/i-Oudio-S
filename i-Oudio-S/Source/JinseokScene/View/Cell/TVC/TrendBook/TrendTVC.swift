@@ -1,5 +1,5 @@
 //
-//  SmallTVC.swift
+//  LargeTVC.swift
 //  i-Oudio-S
 //
 //  Created by 홍진석 on 2021/05/17.
@@ -7,20 +7,23 @@
 
 import UIKit
 
-class SmallTVC: UITableViewCell {
-
+class TrendTVC : UITableViewCell {
+    
+    static let identifier = "TrendTVC"
+    
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.delegate = self
         
-        collectionView.register(UINib(nibName: SmallCVC.identifier, bundle: nil), forCellWithReuseIdentifier: SmallCVC.identifier)
+        collectionView.register(UINib(nibName: LargeCVC.identifier, bundle: nil), forCellWithReuseIdentifier: LargeCVC.identifier)
+        // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
@@ -29,16 +32,16 @@ class SmallTVC: UITableViewCell {
     
 }
 
-extension SmallTVC : UICollectionViewDelegate{
+extension TrendTVC : UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width
-
-        let cellWidth = width * (95/375)
-        let cellHeight = cellWidth * (237/95)
-
+        
+        let cellWidth = width * (324/375)
+        let cellHeight = cellWidth * (180/324)
+        
         return CGSize(width: cellWidth, height: cellHeight)
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero
     }
@@ -46,21 +49,25 @@ extension SmallTVC : UICollectionViewDelegate{
         return 0
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 9
+        return 20
     }
 }
-extension SmallTVC : UICollectionViewDataSource{
+
+extension TrendTVC : UICollectionViewDataSource{
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallCVC.identifier, for: indexPath) as? SmallCVC else {return UICollectionViewCell()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LargeCVC.identifier, for: indexPath) as? LargeCVC else {return UICollectionViewCell()}
         
-        cell.bookTitle.text = "Title test"
+        cell.mainTitle.text = "메인타이틀"
+        cell.subTitle.text = "서브타이틀"
         cell.writer.text = "Writer test"
         cell.price.text = "Price test"
         

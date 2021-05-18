@@ -18,11 +18,10 @@ class ViewController: UIViewController {
     @IBAction func btn(_ sender: Any) {
     
         let storyboard = UIStoryboard.init(name: "Jinseok", bundle : nil)
-        guard let nextVC = storyboard.instantiateViewController(identifier: "HomeVC") as? HomeVC else{return}
-
-        self.navigationController?.pushViewController(nextVC, animated: true)
-        nextVC.modalPresentationStyle = .overFullScreen
+        guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarController") as? TabbarController else{return}
+        nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated: true, completion: nil)
+    
     }
     
 }

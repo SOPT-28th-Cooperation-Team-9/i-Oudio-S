@@ -15,15 +15,15 @@
 		3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0F9C264FA92800AB9405 /* LaunchScreen.storyboard */; };
 		3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */; };
 		3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */; };
-
+		4F7A07542652D86700206472 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A07532652D86700206472 /* TabbarController.swift */; };
 		4F831E4A26518A6200676684 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E4926518A6200676684 /* HomeVC.swift */; };
 		4F831E4C26518A6E00676684 /* Jinseok.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E4B26518A6E00676684 /* Jinseok.storyboard */; };
-		4F831E5C26518FA400676684 /* SmallTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E5A26518FA400676684 /* SmallTVC.swift */; };
-		4F831E5D26518FA400676684 /* SmallTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E5B26518FA400676684 /* SmallTVC.xib */; };
-		4F831E602651911100676684 /* LargeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E5E2651911100676684 /* LargeTVC.swift */; };
-		4F831E612651911100676684 /* LargeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E5F2651911100676684 /* LargeTVC.xib */; };
-		4F831E64265197F700676684 /* RoundTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E62265197F700676684 /* RoundTVC.swift */; };
-		4F831E65265197F700676684 /* RoundTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E63265197F700676684 /* RoundTVC.xib */; };
+		4F831E5C26518FA400676684 /* DiscountTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E5A26518FA400676684 /* DiscountTVC.swift */; };
+		4F831E5D26518FA400676684 /* DiscountTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E5B26518FA400676684 /* DiscountTVC.xib */; };
+		4F831E602651911100676684 /* TrendTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E5E2651911100676684 /* TrendTVC.swift */; };
+		4F831E612651911100676684 /* TrendTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E5F2651911100676684 /* TrendTVC.xib */; };
+		4F831E64265197F700676684 /* AudioTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E62265197F700676684 /* AudioTVC.swift */; };
+		4F831E65265197F700676684 /* AudioTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E63265197F700676684 /* AudioTVC.xib */; };
 		4F831E6826519FB700676684 /* SmallCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E6626519FB700676684 /* SmallCVC.swift */; };
 		4F831E6926519FB700676684 /* SmallCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E6726519FB700676684 /* SmallCVC.xib */; };
 		4F831E6E265247A300676684 /* LargeCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E6C265247A200676684 /* LargeCVC.swift */; };
@@ -43,22 +43,21 @@
 		3C0E0F9F264FA92800AB9405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "i-Oudio-S/Resource/Info.plist"; sourceTree = SOURCE_ROOT; };
 		3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHomeVC.swift; sourceTree = "<group>"; };
 		3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Audio.storyboard; sourceTree = "<group>"; };
-
+		4F7A07532652D86700206472 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		4F831E4926518A6200676684 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		4F831E4B26518A6E00676684 /* Jinseok.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jinseok.storyboard; sourceTree = "<group>"; };
-		4F831E5A26518FA400676684 /* SmallTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTVC.swift; sourceTree = "<group>"; };
-		4F831E5B26518FA400676684 /* SmallTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallTVC.xib; sourceTree = "<group>"; };
-		4F831E5E2651911100676684 /* LargeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTVC.swift; sourceTree = "<group>"; };
-		4F831E5F2651911100676684 /* LargeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeTVC.xib; sourceTree = "<group>"; };
-		4F831E62265197F700676684 /* RoundTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTVC.swift; sourceTree = "<group>"; };
-		4F831E63265197F700676684 /* RoundTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundTVC.xib; sourceTree = "<group>"; };
+		4F831E5A26518FA400676684 /* DiscountTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTVC.swift; sourceTree = "<group>"; };
+		4F831E5B26518FA400676684 /* DiscountTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscountTVC.xib; sourceTree = "<group>"; };
+		4F831E5E2651911100676684 /* TrendTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTVC.swift; sourceTree = "<group>"; };
+		4F831E5F2651911100676684 /* TrendTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendTVC.xib; sourceTree = "<group>"; };
+		4F831E62265197F700676684 /* AudioTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTVC.swift; sourceTree = "<group>"; };
+		4F831E63265197F700676684 /* AudioTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioTVC.xib; sourceTree = "<group>"; };
 		4F831E6626519FB700676684 /* SmallCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCVC.swift; sourceTree = "<group>"; };
 		4F831E6726519FB700676684 /* SmallCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallCVC.xib; sourceTree = "<group>"; };
 		4F831E6C265247A200676684 /* LargeCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCVC.swift; sourceTree = "<group>"; };
 		4F831E6D265247A200676684 /* LargeCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeCVC.xib; sourceTree = "<group>"; };
 		4F831E74265254E200676684 /* RoundCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCVC.swift; sourceTree = "<group>"; };
 		4F831E75265254E200676684 /* RoundCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundCVC.xib; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +178,38 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-
+		4F7A074A2652C8A700206472 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E6626519FB700676684 /* SmallCVC.swift */,
+				4F831E6726519FB700676684 /* SmallCVC.xib */,
+				4F831E6C265247A200676684 /* LargeCVC.swift */,
+				4F831E6D265247A200676684 /* LargeCVC.xib */,
+				4F831E74265254E200676684 /* RoundCVC.swift */,
+				4F831E75265254E200676684 /* RoundCVC.xib */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
+		4F7A074B2652C8B100206472 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E72265247E300676684 /* DiscountBook */,
+				4F831E70265247AB00676684 /* TrendBook */,
+				4F7A074D2652C9F100206472 /* AudioBook */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		4F7A074D2652C9F100206472 /* AudioBook */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E62265197F700676684 /* AudioTVC.swift */,
+				4F831E63265197F700676684 /* AudioTVC.xib */,
+			);
+			path = AudioBook;
+			sourceTree = "<group>";
+		};
 		4F831E4526518A3E00676684 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,67 +219,47 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-
 		4F831E4626518A4400676684 /* Model */ = {
-
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-
 		4F831E4726518A4C00676684 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				4F831E72265247E300676684 /* Small */,
-				4F831E70265247AB00676684 /* Large */,
-				4F831E73265254BE00676684 /* Round */,
+				4F7A074B2652C8B100206472 /* TVC */,
+				4F7A074A2652C8A700206472 /* CVC */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
-
 		4F831E4826518A5000676684 /* VC */ = {
 			isa = PBXGroup;
 			children = (
 				4F831E4926518A6200676684 /* HomeVC.swift */,
+				4F7A07532652D86700206472 /* TabbarController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
 		};
-
-		4F831E70265247AB00676684 /* Large */ = {
+		4F831E70265247AB00676684 /* TrendBook */ = {
 			isa = PBXGroup;
 			children = (
-				4F831E5E2651911100676684 /* LargeTVC.swift */,
-				4F831E5F2651911100676684 /* LargeTVC.xib */,
-				4F831E6C265247A200676684 /* LargeCVC.swift */,
-				4F831E6D265247A200676684 /* LargeCVC.xib */,
+				4F831E5E2651911100676684 /* TrendTVC.swift */,
+				4F831E5F2651911100676684 /* TrendTVC.xib */,
 			);
-			path = Large;
+			path = TrendBook;
 			sourceTree = "<group>";
 		};
-		4F831E72265247E300676684 /* Small */ = {
+		4F831E72265247E300676684 /* DiscountBook */ = {
 			isa = PBXGroup;
 			children = (
-				4F831E5A26518FA400676684 /* SmallTVC.swift */,
-				4F831E5B26518FA400676684 /* SmallTVC.xib */,
-				4F831E6626519FB700676684 /* SmallCVC.swift */,
-				4F831E6726519FB700676684 /* SmallCVC.xib */,
+				4F831E5A26518FA400676684 /* DiscountTVC.swift */,
+				4F831E5B26518FA400676684 /* DiscountTVC.xib */,
 			);
-			path = Small;
-			sourceTree = "<group>";
-		};
-		4F831E73265254BE00676684 /* Round */ = {
-			isa = PBXGroup;
-			children = (
-				4F831E62265197F700676684 /* RoundTVC.swift */,
-				4F831E63265197F700676684 /* RoundTVC.xib */,
-				4F831E74265254E200676684 /* RoundCVC.swift */,
-				4F831E75265254E200676684 /* RoundCVC.xib */,
-			);
-			path = Round;
+			path = DiscountBook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,15 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */,
-				4F831E2B26505C0A00676684 /* HomeTVC.xib in Resources */,
 				3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */,
-
 				4F831E77265254E200676684 /* RoundCVC.xib in Resources */,
-				4F831E65265197F700676684 /* RoundTVC.xib in Resources */,
+				4F831E65265197F700676684 /* AudioTVC.xib in Resources */,
 				4F831E6926519FB700676684 /* SmallCVC.xib in Resources */,
 				4F831E4C26518A6E00676684 /* Jinseok.storyboard in Resources */,
-				4F831E612651911100676684 /* LargeTVC.xib in Resources */,
-				4F831E5D26518FA400676684 /* SmallTVC.xib in Resources */,
+				4F831E612651911100676684 /* TrendTVC.xib in Resources */,
+				4F831E5D26518FA400676684 /* DiscountTVC.xib in Resources */,
 				3C0E0F9B264FA92800AB9405 /* Assets.xcassets in Resources */,
 				4F831E6F265247A300676684 /* LargeCVC.xib in Resources */,
 				3C0E0F99264FA92700AB9405 /* Main.storyboard in Resources */,
@@ -334,18 +342,16 @@
 			files = (
 				4F831E76265254E200676684 /* RoundCVC.swift in Sources */,
 				3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */,
+				4F7A07542652D86700206472 /* TabbarController.swift in Sources */,
 				4F831E6826519FB700676684 /* SmallCVC.swift in Sources */,
-				4F831E602651911100676684 /* LargeTVC.swift in Sources */,
-				4F831E5C26518FA400676684 /* SmallTVC.swift in Sources */,
+				4F831E602651911100676684 /* TrendTVC.swift in Sources */,
+				4F831E5C26518FA400676684 /* DiscountTVC.swift in Sources */,
 				4F831E4A26518A6200676684 /* HomeVC.swift in Sources */,
 				3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */,
 				3C0E0F92264FA92700AB9405 /* AppDelegate.swift in Sources */,
-
-				4F831E64265197F700676684 /* RoundTVC.swift in Sources */,
+				4F831E64265197F700676684 /* AudioTVC.swift in Sources */,
 				4F831E6E265247A300676684 /* LargeCVC.swift in Sources */,
-
 				3C0E0F94264FA92700AB9405 /* SceneDelegate.swift in Sources */,
-				4F831E2A26505C0A00676684 /* HomeTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +500,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8A843466G;
-
 				INFOPLIST_FILE = "/Users/hongjinseok/ios/i-Oudio-S/i-Oudio-S/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,7 +520,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8A843466G;
 				INFOPLIST_FILE = "/Users/hongjinseok/ios/i-Oudio-S/i-Oudio-S/Resource/Info.plist";
-
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

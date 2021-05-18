@@ -7,7 +7,9 @@
 
 import UIKit
 
-class RoundTVC: UITableViewCell {
+class AudioTVC: UITableViewCell {
+    
+    static let identifier = "AudioTVC"
     
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -30,12 +32,12 @@ class RoundTVC: UITableViewCell {
     
 }
 
-extension RoundTVC : UICollectionViewDelegate{
+extension AudioTVC : UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width
         
         let cellWidth = width * (65/375)
-        let cellHeight = cellWidth * (135/65)
+        let cellHeight = cellWidth * (109/65)
         
         return CGSize(width: cellWidth, height: cellHeight)
     }
@@ -53,7 +55,7 @@ extension RoundTVC : UICollectionViewDelegate{
     }
 }
 
-extension RoundTVC : UICollectionViewDataSource{
+extension AudioTVC : UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
