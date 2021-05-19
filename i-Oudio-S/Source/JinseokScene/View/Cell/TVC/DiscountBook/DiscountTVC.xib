@@ -56,6 +56,7 @@
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="collectionView" destination="gXU-N9-O2V" id="1gJ-Ut-vqS"/>
+                <outlet property="moreBtn" destination="ff5-jn-4ga" id="mK9-lB-PeP"/>
                 <outlet property="title" destination="6bL-wp-Sjd" id="4HK-uO-grS"/>
             </connections>
             <point key="canvasLocation" x="-92.028985507246389" y="-154.01785714285714"/>

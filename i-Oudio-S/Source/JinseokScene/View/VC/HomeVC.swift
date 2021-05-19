@@ -9,6 +9,11 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var mainTitle: UILabel!
+    @IBOutlet weak var mainBookView: UIView!
+    @IBOutlet weak var mainBookTitle: UILabel!
+    @IBOutlet weak var mainBookWriter: UILabel!
+    @IBOutlet weak var mainBookSubTitle: UILabel!
     @IBOutlet weak var mainTV: UITableView!
     @IBOutlet weak var mainTHV: UIView!
     
@@ -16,6 +21,8 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUI()
         mainTV.tableFooterView = UIView()
         mainTV.tableHeaderView = mainTHV
         mainTV.separatorStyle = .none
@@ -30,6 +37,25 @@ class HomeVC: UIViewController {
     }
 
     // MARK: - Navigation
+    func setUI(){
+        mainBookView.backgroundColor = UIColor.mainBlue
+        
+        mainTitle.textColor = UIColor.white
+        mainTitle.font = UIFont.myBoldSystemFont(ofSize: 26)
+       
+        mainBookTitle.textColor = UIColor.white
+        mainBookTitle.text = "'유퀴즈 출연 김범석 의사의\n<어떤 죽음이 삶에게 말했다"
+        mainBookTitle.font = UIFont.myBoldSystemFont(ofSize: 19)
+        
+        mainBookWriter.textColor = UIColor.white
+        mainBookWriter.text = "김범석 저자\n김범석 낭독"
+        mainBookWriter.font = UIFont.myRegularSystemFont(ofSize: 12)
+       
+        mainBookSubTitle.textColor = UIColor.white
+        mainBookSubTitle.text = "오늘만 무료! '수요 오디오 책방'"
+        mainBookSubTitle.font = UIFont.myBoldSystemFont(ofSize: 14)
+        
+    }
 }
 
 extension HomeVC: UITableViewDelegate{

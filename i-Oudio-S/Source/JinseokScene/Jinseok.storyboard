@@ -25,9 +25,56 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OY3-j7-7UX">
                                             <rect key="frame" x="0.0" y="81" width="414" height="161"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxB-02-ZLQ">
+                                                    <rect key="frame" x="18" y="18" width="267" height="20.5"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="'유퀴즈 출연 김범석 의사의">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG4-OD-U1E">
+                                                    <rect key="frame" x="18" y="41.5" width="41.5" height="20.5"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="17"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcD-RQ-KKb">
+                                                    <rect key="frame" x="18" y="77" width="378" height="1"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="aoS-3y-ViF"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcf-aw-U3C">
+                                                    <rect key="frame" x="18" y="90" width="41.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="systemBlueColor"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="qxB-02-ZLQ" secondAttribute="trailing" constant="129" id="13b-9u-a4h"/>
+                                                <constraint firstItem="EcD-RQ-KKb" firstAttribute="top" secondItem="pG4-OD-U1E" secondAttribute="bottom" constant="15" id="3hc-fK-DYH"/>
                                                 <constraint firstAttribute="height" constant="161" id="94Y-KY-oQo"/>
+                                                <constraint firstItem="vcf-aw-U3C" firstAttribute="top" secondItem="EcD-RQ-KKb" secondAttribute="bottom" constant="12" id="AnV-Jh-89k"/>
+                                                <constraint firstItem="qxB-02-ZLQ" firstAttribute="top" secondItem="OY3-j7-7UX" secondAttribute="top" constant="18" id="H5X-Ib-gkO"/>
+                                                <constraint firstItem="pG4-OD-U1E" firstAttribute="leading" secondItem="OY3-j7-7UX" secondAttribute="leading" constant="18" id="JlJ-eX-fGk"/>
+                                                <constraint firstItem="vcf-aw-U3C" firstAttribute="leading" secondItem="OY3-j7-7UX" secondAttribute="leading" constant="18" id="QzL-5a-tw9"/>
+                                                <constraint firstItem="EcD-RQ-KKb" firstAttribute="leading" secondItem="OY3-j7-7UX" secondAttribute="leading" constant="18" id="Uwj-zg-ovO"/>
+                                                <constraint firstItem="qxB-02-ZLQ" firstAttribute="leading" secondItem="OY3-j7-7UX" secondAttribute="leading" constant="18" id="bHo-vS-NLK"/>
+                                                <constraint firstAttribute="trailing" secondItem="EcD-RQ-KKb" secondAttribute="trailing" constant="18" id="oGc-hf-kAe"/>
+                                                <constraint firstItem="pG4-OD-U1E" firstAttribute="top" secondItem="qxB-02-ZLQ" secondAttribute="bottom" constant="3" id="rKs-pB-yLf"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오디오북" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saL-dj-5Y9">
@@ -100,22 +147,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-xy-Gb5">
-                                        <rect key="frame" x="301" y="15.5" width="95" height="22.5"/>
+                                        <rect key="frame" x="283" y="14" width="113" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC4-fJ-SXH">
-                                                <rect key="frame" x="0.0" y="0.0" width="21" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="25"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="play.fill" catalog="system"/>
+                                                <state key="normal" image="Frame 57"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfV-27-40p">
-                                                <rect key="frame" x="37" y="0.0" width="21" height="22.5"/>
+                                                <rect key="frame" x="43" y="0.0" width="27" height="25"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="goforward.15" catalog="system"/>
+                                                <state key="normal" image="Frame 59"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VC-ff-eXv">
-                                                <rect key="frame" x="74" y="0.0" width="21" height="22.5"/>
+                                                <rect key="frame" x="86" y="0.0" width="27" height="25"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="list.star" catalog="system"/>
+                                                <state key="normal" image="Frame 60"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -144,8 +191,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="Frame 18" id="aO8-oA-UFQ"/>
                     <connections>
+                        <outlet property="mainBookSubTitle" destination="vcf-aw-U3C" id="Eyz-MZ-XPY"/>
+                        <outlet property="mainBookTitle" destination="qxB-02-ZLQ" id="6LS-rh-OQq"/>
+                        <outlet property="mainBookView" destination="OY3-j7-7UX" id="ojm-5R-5tv"/>
+                        <outlet property="mainBookWriter" destination="pG4-OD-U1E" id="CP5-rs-naM"/>
                         <outlet property="mainTHV" destination="mxu-E8-eZo" id="2WP-33-0QG"/>
                         <outlet property="mainTV" destination="GpF-TX-UtZ" id="2Lv-i7-NpY"/>
+                        <outlet property="mainTitle" destination="saL-dj-5Y9" id="4Tv-fN-VQk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -158,6 +210,7 @@
                 <tabBarController storyboardIdentifier="TabbarController" automaticallyAdjustsScrollViewInsets="NO" id="7sP-1O-9p1" customClass="TabbarController" customModule="i_Oudio_S" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="w6a-ff-DlP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -215,12 +268,12 @@
         <image name="Component 29" width="21" height="17"/>
         <image name="Frame 18" width="21" height="20"/>
         <image name="Frame 19" width="23" height="20.5"/>
+        <image name="Frame 57" width="25" height="25"/>
+        <image name="Frame 59" width="26" height="25"/>
+        <image name="Frame 60" width="25" height="25"/>
         <image name="Group 421" width="20" height="20"/>
         <image name="Rectangle 1057" width="81" height="117"/>
         <image name="Subtract" width="23" height="20"/>
-        <image name="goforward.15" catalog="system" width="121" height="128"/>
-        <image name="list.star" catalog="system" width="128" height="94"/>
-        <image name="play.fill" catalog="system" width="116" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

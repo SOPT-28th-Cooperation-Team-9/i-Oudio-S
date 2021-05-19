@@ -17,6 +17,8 @@ class AudioTVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        setUI()
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         
@@ -29,7 +31,10 @@ class AudioTVC: UITableViewCell {
         
         // Configure the view for the selected state
     }
-    
+    func setUI(){
+        title.textColor = UIColor.white
+        title.font = UIFont.myBoldSystemFont(ofSize: 17)
+    }
 }
 
 extension AudioTVC : UICollectionViewDelegate{

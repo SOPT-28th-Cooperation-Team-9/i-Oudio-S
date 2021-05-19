@@ -11,16 +11,18 @@ class TrendTVC : UITableViewCell {
     
     static let identifier = "TrendTVC"
     
+    @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        setUI()
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        collectionView.register(UINib(nibName: LargeCVC.identifier, bundle: nil), forCellWithReuseIdentifier: LargeCVC.identifier)
+        collectionView.register(UINib(nibName: LargeRectCVC.identifier, bundle: nil), forCellWithReuseIdentifier: LargeRectCVC.identifier)
         // Initialization code
     }
     
@@ -28,6 +30,14 @@ class TrendTVC : UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+    }
+    
+    func setUI(){
+        title.textColor = UIColor.white
+        title.font = UIFont.myBoldSystemFont(ofSize: 17)
+        
+        moreBtn.setTitleColor(UIColor.mainGray1, for: .normal)
+        moreBtn.titleLabel?.font = UIFont.myMediumSystemFont(ofSize: 13)
     }
     
 }
@@ -64,7 +74,7 @@ extension TrendTVC : UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LargeCVC.identifier, for: indexPath) as? LargeCVC else {return UICollectionViewCell()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LargeRectCVC.identifier, for: indexPath) as? LargeRectCVC else {return UICollectionViewCell()}
         
         cell.mainTitle.text = "메인타이틀"
         cell.subTitle.text = "서브타이틀"

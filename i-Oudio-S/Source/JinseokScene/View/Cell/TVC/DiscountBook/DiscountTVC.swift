@@ -8,19 +8,22 @@
 import UIKit
 
 class DiscountTVC: UITableViewCell {
-
+    
     static let identifier = "DiscountTVC"
     
+    @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        setUI()
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        collectionView.register(UINib(nibName: SmallCVC.identifier, bundle: nil), forCellWithReuseIdentifier: SmallCVC.identifier)
+        collectionView.register(UINib(nibName: SmallRectCVC.identifier, bundle: nil), forCellWithReuseIdentifier: SmallRectCVC.identifier)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,7 +31,13 @@ class DiscountTVC: UITableViewCell {
         
         // Configure the view for the selected state
     }
-    
+    func setUI(){
+        title.textColor = UIColor.white
+        title.font = UIFont.myBoldSystemFont(ofSize: 17)
+       
+        moreBtn.setTitleColor(UIColor.mainGray1, for: .normal)
+        moreBtn.titleLabel?.font = UIFont.myMediumSystemFont(ofSize: 13)
+    }
 }
 
 extension DiscountTVC : UICollectionViewDelegate{
@@ -66,7 +75,7 @@ extension DiscountTVC : UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallCVC.identifier, for: indexPath) as? SmallCVC else {return UICollectionViewCell()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallRectCVC.identifier, for: indexPath) as? SmallRectCVC else {return UICollectionViewCell()}
         cell.backgroundColor = self.backgroundColor
         cell.bookTitle.text = "데미안 믿음사\n세계문학,완독"
         cell.writer.text = "Writer test"
