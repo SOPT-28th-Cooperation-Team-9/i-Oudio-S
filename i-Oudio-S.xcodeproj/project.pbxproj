@@ -22,6 +22,22 @@
 		3C2008192652BD2400C0FAAF /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008122652BD2400C0FAAF /* OFL.txt */; };
 		3C20081A2652BD2400C0FAAF /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008132652BD2400C0FAAF /* NotoSansKR-Black.otf */; };
 		3C20081C2652BD2400C0FAAF /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008152652BD2400C0FAAF /* NotoSansKR-Regular.otf */; };
+		3C20081E2652BD4100C0FAAF /* Extentions+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */; };
+		4F7A07542652D86700206472 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A07532652D86700206472 /* TabbarController.swift */; };
+		4F831E4A26518A6200676684 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E4926518A6200676684 /* HomeVC.swift */; };
+		4F831E4C26518A6E00676684 /* Jinseok.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E4B26518A6E00676684 /* Jinseok.storyboard */; };
+		4F831E5C26518FA400676684 /* DiscountTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E5A26518FA400676684 /* DiscountTVC.swift */; };
+		4F831E5D26518FA400676684 /* DiscountTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E5B26518FA400676684 /* DiscountTVC.xib */; };
+		4F831E602651911100676684 /* TrendTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E5E2651911100676684 /* TrendTVC.swift */; };
+		4F831E612651911100676684 /* TrendTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E5F2651911100676684 /* TrendTVC.xib */; };
+		4F831E64265197F700676684 /* AudioTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E62265197F700676684 /* AudioTVC.swift */; };
+		4F831E65265197F700676684 /* AudioTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E63265197F700676684 /* AudioTVC.xib */; };
+		4F831E6826519FB700676684 /* SmallRectCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E6626519FB700676684 /* SmallRectCVC.swift */; };
+		4F831E6926519FB700676684 /* SmallRectCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E6726519FB700676684 /* SmallRectCVC.xib */; };
+		4F831E6E265247A300676684 /* LargeRectCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E6C265247A200676684 /* LargeRectCVC.swift */; };
+		4F831E6F265247A300676684 /* LargeRectCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E6D265247A200676684 /* LargeRectCVC.xib */; };
+		4F831E76265254E200676684 /* RoundCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E74265254E200676684 /* RoundCVC.swift */; };
+		4F831E77265254E200676684 /* RoundCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E75265254E200676684 /* RoundCVC.xib */; };
 		3C383DD4265387BF00C47952 /* Extentions+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */; };
 		3C383DD72653892100C47952 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C383DD5265388B200C47952 /* NotoSansKR-Medium.otf */; };
 		3C383DDA26539C7900C47952 /* TopicBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C383DD826539C7900C47952 /* TopicBookTVC.swift */; };
@@ -50,6 +66,9 @@
 		3C0E0F98264FA92700AB9405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C0E0F9A264FA92800AB9405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C0E0F9D264FA92800AB9405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C0E0F9F264FA92800AB9405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "i-Oudio-S/Resource/Info.plist"; sourceTree = SOURCE_ROOT; };
+		3C0E0FAA264FAB2400AB9405 /* AudioHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHomeVC.swift; sourceTree = "<group>"; };
+		3C0E0FAC264FAB3500AB9405 /* Audio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Audio.storyboard; sourceTree = "<group>"; };
 		3C0E0F9F264FA92800AB9405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C0E0FAA264FAB2400AB9405 /* AudioBookHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBookHomeVC.swift; sourceTree = "<group>"; };
 		3C0E0FAC264FAB3500AB9405 /* HRAudio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HRAudio.storyboard; sourceTree = "<group>"; };
@@ -78,6 +97,21 @@
 		3C85E0FC2653BE63000FA0E7 /* SNSBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNSBookCVC.xib; sourceTree = "<group>"; };
 		3C85E0FF2653C393000FA0E7 /* SNSBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSBookTVC.swift; sourceTree = "<group>"; };
 		3C85E1002653C393000FA0E7 /* SNSBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNSBookTVC.xib; sourceTree = "<group>"; };
+		4F7A07532652D86700206472 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		4F831E4926518A6200676684 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		4F831E4B26518A6E00676684 /* Jinseok.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jinseok.storyboard; sourceTree = "<group>"; };
+		4F831E5A26518FA400676684 /* DiscountTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTVC.swift; sourceTree = "<group>"; };
+		4F831E5B26518FA400676684 /* DiscountTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscountTVC.xib; sourceTree = "<group>"; };
+		4F831E5E2651911100676684 /* TrendTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTVC.swift; sourceTree = "<group>"; };
+		4F831E5F2651911100676684 /* TrendTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendTVC.xib; sourceTree = "<group>"; };
+		4F831E62265197F700676684 /* AudioTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTVC.swift; sourceTree = "<group>"; };
+		4F831E63265197F700676684 /* AudioTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioTVC.xib; sourceTree = "<group>"; };
+		4F831E6626519FB700676684 /* SmallRectCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRectCVC.swift; sourceTree = "<group>"; };
+		4F831E6726519FB700676684 /* SmallRectCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallRectCVC.xib; sourceTree = "<group>"; };
+		4F831E6C265247A200676684 /* LargeRectCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeRectCVC.swift; sourceTree = "<group>"; };
+		4F831E6D265247A200676684 /* LargeRectCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeRectCVC.xib; sourceTree = "<group>"; };
+		4F831E74265254E200676684 /* RoundCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCVC.swift; sourceTree = "<group>"; };
+		4F831E75265254E200676684 /* RoundCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundCVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +162,9 @@
 		3C0E0FA6264FAAA300AB9405 /* JinseokScene */ = {
 			isa = PBXGroup;
 			children = (
+				4F831E4626518A4400676684 /* Model */,
+				4F831E4526518A3E00676684 /* View */,
+				4F831E4B26518A6E00676684 /* Jinseok.storyboard */,
 			);
 			path = JinseokScene;
 			sourceTree = "<group>";
@@ -244,6 +281,90 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4F7A074A2652C8A700206472 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E6626519FB700676684 /* SmallRectCVC.swift */,
+				4F831E6726519FB700676684 /* SmallRectCVC.xib */,
+				4F831E6C265247A200676684 /* LargeRectCVC.swift */,
+				4F831E6D265247A200676684 /* LargeRectCVC.xib */,
+				4F831E74265254E200676684 /* RoundCVC.swift */,
+				4F831E75265254E200676684 /* RoundCVC.xib */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
+		4F7A074B2652C8B100206472 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E72265247E300676684 /* DiscountBook */,
+				4F831E70265247AB00676684 /* TrendBook */,
+				4F7A074D2652C9F100206472 /* AudioBook */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		4F7A074D2652C9F100206472 /* AudioBook */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E62265197F700676684 /* AudioTVC.swift */,
+				4F831E63265197F700676684 /* AudioTVC.xib */,
+			);
+			path = AudioBook;
+			sourceTree = "<group>";
+		};
+		4F831E4526518A3E00676684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E4826518A5000676684 /* VC */,
+				4F831E4726518A4C00676684 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F831E4626518A4400676684 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F831E4726518A4C00676684 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4F7A074B2652C8B100206472 /* TVC */,
+				4F7A074A2652C8A700206472 /* CVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4F831E4826518A5000676684 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E4926518A6200676684 /* HomeVC.swift */,
+				4F7A07532652D86700206472 /* TabbarController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		4F831E70265247AB00676684 /* TrendBook */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E5E2651911100676684 /* TrendTVC.swift */,
+				4F831E5F2651911100676684 /* TrendTVC.xib */,
+			);
+			path = TrendBook;
+			sourceTree = "<group>";
+		};
+		4F831E72265247E300676684 /* DiscountBook */ = {
+			isa = PBXGroup;
+			children = (
+				4F831E5A26518FA400676684 /* DiscountTVC.swift */,
+				4F831E5B26518FA400676684 /* DiscountTVC.xib */,
+			);
+			path = DiscountBook;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -313,9 +434,17 @@
 				3C383DDF26539D3B00C47952 /* TopicBookCVC.xib in Resources */,
 				3C383DDB26539C7900C47952 /* TopicBookTVC.xib in Resources */,
 				3C0E0FAD264FAB3500AB9405 /* HRAudio.storyboard in Resources */,
+				3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */,
+				4F831E77265254E200676684 /* RoundCVC.xib in Resources */,
+				4F831E65265197F700676684 /* AudioTVC.xib in Resources */,
+				4F831E6926519FB700676684 /* SmallRectCVC.xib in Resources */,
+				4F831E4C26518A6E00676684 /* Jinseok.storyboard in Resources */,
+				4F831E612651911100676684 /* TrendTVC.xib in Resources */,
+				4F831E5D26518FA400676684 /* DiscountTVC.xib in Resources */,
 				3C0E0F9B264FA92800AB9405 /* Assets.xcassets in Resources */,
 				3C2008172652BD2400C0FAAF /* NotoSansKR-Bold.otf in Resources */,
 				3C2008192652BD2400C0FAAF /* OFL.txt in Resources */,
+				4F831E6F265247A300676684 /* LargeRectCVC.xib in Resources */,
 				3C0E0F99264FA92700AB9405 /* Main.storyboard in Resources */,
 				3C8112C2265362C50063AF30 /* BasicBookCVC.xib in Resources */,
 				3C8112B6265355AB0063AF30 /* AudioHeaderTVC.xib in Resources */,
@@ -329,11 +458,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F831E76265254E200676684 /* RoundCVC.swift in Sources */,
+				3C0E0FAB264FAB2400AB9405 /* AudioHomeVC.swift in Sources */,
 				3C383DE126539EC600C47952 /* TopicBookData.swift in Sources */,
 				3C0E0FAB264FAB2400AB9405 /* AudioBookHomeVC.swift in Sources */,
 				3C20080C2652B7F800C0FAAF /* Extentions+UIColor.swift in Sources */,
+				4F7A07542652D86700206472 /* TabbarController.swift in Sources */,
+				4F831E6826519FB700676684 /* SmallRectCVC.swift in Sources */,
+				4F831E602651911100676684 /* TrendTVC.swift in Sources */,
+				4F831E5C26518FA400676684 /* DiscountTVC.swift in Sources */,
+				4F831E4A26518A6200676684 /* HomeVC.swift in Sources */,
 				3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */,
 				3C0E0F92264FA92700AB9405 /* AppDelegate.swift in Sources */,
+				4F831E64265197F700676684 /* AudioTVC.swift in Sources */,
+				4F831E6E265247A300676684 /* LargeRectCVC.swift in Sources */,
 				3C0E0F94264FA92700AB9405 /* SceneDelegate.swift in Sources */,
 				3C8112B5265355AB0063AF30 /* AudioHeaderTVC.swift in Sources */,
 				3C383DDA26539C7900C47952 /* TopicBookTVC.swift in Sources */,
