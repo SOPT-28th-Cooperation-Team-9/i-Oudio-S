@@ -12,7 +12,7 @@ class AudioBookHomeVC: UIViewController {
     var fictionBooks : [BasicBookData] = []
     var poemBooks: [BasicBookData] = []
     var topicBooks: [TopicBookData] = []
-    
+    var snsBooks: [BasicBookData] = []
     
     @IBOutlet weak var playingAudioNameLabel: UILabel!
     
@@ -37,6 +37,9 @@ class AudioBookHomeVC: UIViewController {
         
         let topicBookNib = UINib(nibName: TopicBookTVC.identifier, bundle: nil)
         mainTableView.register(topicBookNib, forCellReuseIdentifier: TopicBookTVC.identifier)
+        
+        let snsBookNib =  UINib(nibName: SNSBookTVC.identifier, bundle: nil)
+        mainTableView.register(snsBookNib, forCellReuseIdentifier: SNSBookTVC.identifier)
     }
 
     func setUI(){
@@ -62,6 +65,8 @@ extension AudioBookHomeVC: UITableViewDelegate{
         switch indexPath.section {
         case 0:
             return width * (228/375)
+        case 2:
+            return width * (286/375)
         case 3:
             return width * (145/375)
         default:
@@ -93,6 +98,13 @@ extension AudioBookHomeVC: UITableViewDataSource{
             
             cell.bookList = fictionBooks
             cell.setTitleText(title: "믿음사 세계문학 10권 70% 할인")
+            return cell
+        case 2:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: SNSBookTVC.identifier) as? SNSBookTVC else {
+                return UITableViewCell()
+            }
+            
+            cell.bookList = snsBooks
             return cell
             
         case 3:
