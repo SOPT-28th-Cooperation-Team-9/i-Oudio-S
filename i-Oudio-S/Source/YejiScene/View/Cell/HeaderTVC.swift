@@ -35,11 +35,11 @@ class HeaderTVC: UITableViewCell {
             headerImageView.image = image
         }
         titleLabel.text = title
-//        titleLabel.font = UIFont.NotoSansFont(weight: .Bold, size: 19)
+        titleLabel.font = UIFont.myBoldSystemFont(ofSize: 19)
         authorLabel.text = author
-//        authorLabel.font = UIFont.NotoSansFont(weight: .Regular, size: 12)
+        authorLabel.font = UIFont.myRegularSystemFont(ofSize: 12)
         subTitleLabel.text = subTitle
-//        subTitleLabel.font = UIFont.NotoSansFont(weight: .Bold, size: 14)
+        subTitleLabel.font = UIFont.myBoldSystemFont(ofSize: 14)
         
         subTitleLabel.sizeToFit()
     }

@@ -10,32 +10,44 @@ import UIKit
 class BookCVC: UICollectionViewCell {
     
     @IBOutlet weak var bookImageView: UIImageView!
-    @IBOutlet weak var bookTitleTextView: UITextView! {
+    @IBOutlet weak var bookTitleTextView: UILabel! {
         didSet {
-            let padding = bookTitleTextView.textContainer.lineFragmentPadding
-            
-            bookTitleTextView.textContainerInset = UIEdgeInsets(top: 0, left: -padding, bottom: 0, right: padding)
+ 
             bookTitleTextView.textColor = .white
-//            bookTitleTextView.font = UIFont.NotoSansFont(weight: .Bold, size: 13)
+            bookTitleTextView.font = UIFont.myBoldSystemFont(ofSize: 13)
         }
     }
-    @IBOutlet weak var authorTextView: UITextView! {
+    @IBOutlet weak var authorTextView: UILabel! {
         didSet {
-            
-            let padding = authorTextView.textContainer.lineFragmentPadding
-            
-            authorTextView.textContainerInset = UIEdgeInsets(top: 0, left: -padding, bottom: 0, right: padding)
-            authorTextView.textColor = UIColor(red: (126 / 255), green: (126 / 255), blue: (126 / 255), alpha: 1.0)
-            // 왜 미디엄만 쓰면 오류?
-            //            authorTextView.font = UIFont.NotoSansFont(weight: .Medium, size: 11)
-            
+//            let padding = authorTextView.textContainer.lineFragmentPadding
+//            authorTextView.textContainerInset = UIEdgeInsets(top: 0, left: -padding, bottom: 0, right: padding)
+            authorTextView.textColor = .mainGray1
+            authorTextView.font = UIFont.myMediumSystemFont(ofSize: 11)
         }
     }
     @IBOutlet weak var priceLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+
+        
+
         // Initialization code
+//        authorTextView.translatesAutoresizingMaskIntoConstraints = false
+//        bookTitleTextView.translatesAutoresizingMaskIntoConstraints = false
+//        authorTextView.topAnchor.constraint(equalTo: bookTitleTextView.bottomAnchor, constant: 4).isActive = true
+//        authorTextView.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
+//        authorTextView.heightAnchor.constraint(equalToConstant: 32).isActive = true
+//        
+//        bookTitleTextView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+//        
+//        priceLabel.topAnchor.constraint(equalTo: authorTextView.bottomAnchor, constant: 4).isActive = true
+//        
+//        authorTextView.isScrollEnabled = false
+//        bookTitleTextView.isScrollEnabled = false
+//        priceLabel.translatesAutoresizingMaskIntoConstraints = false
+        
     }
     
     func setData(bookImage: String,
@@ -50,6 +62,13 @@ class BookCVC: UICollectionViewCell {
         authorTextView.text = author
         priceLabel.text = price
         
+    }
+    
+    override func prepareForReuse() {
+        bookImageView = nil
+        bookTitleTextView = nil
+        authorTextView = nil
+        priceLabel = nil
     }
     
 }
