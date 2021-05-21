@@ -84,6 +84,7 @@
 		AA4DC96226538804009FA74B /* SnsBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC96026538804009FA74B /* SnsBookTVC.xib */; };
 		AA4DC96A26538E1A009FA74B /* SnsBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */; };
 		AA4DC96B26538E1A009FA74B /* SnsBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */; };
+		4FED5A8826559A3F0035ED16 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED5A8726559A3F0035ED16 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +166,7 @@
 		AA4DC96026538804009FA74B /* SnsBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnsBookTVC.xib; sourceTree = "<group>"; };
 		AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnsBookCVC.swift; sourceTree = "<group>"; };
 		AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnsBookCVC.xib; sourceTree = "<group>"; };
+		4FED5A8726559A3F0035ED16 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +396,7 @@
 		4F831E4626518A4400676684 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4FED5A8726559A3F0035ED16 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				4F831E602651911100676684 /* TrendTVC.swift in Sources */,
 				4F831E5C26518FA400676684 /* DiscountTVC.swift in Sources */,
 				4F831E4A26518A6200676684 /* JSHomeVC.swift in Sources */,
+				4FED5A8826559A3F0035ED16 /* Book.swift in Sources */,
 				3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */,
 				AA4DC94C2652D265009FA74B /* BookDataModel.swift in Sources */,
 				AA4DC9332652670C009FA74B /* BookTVC.swift in Sources */,
