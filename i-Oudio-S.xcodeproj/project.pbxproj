@@ -36,6 +36,10 @@
 		3C8112C1265362C50063AF30 /* BasicBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8112BF265362C50063AF30 /* BasicBookCVC.swift */; };
 		3C8112C2265362C50063AF30 /* BasicBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8112C0265362C50063AF30 /* BasicBookCVC.xib */; };
 		3C8112CE26536B9F0063AF30 /* BasicBookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8112CD26536B9F0063AF30 /* BasicBookData.swift */; };
+		3C85E0FD2653BE63000FA0E7 /* SNSBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C85E0FB2653BE63000FA0E7 /* SNSBookCVC.swift */; };
+		3C85E0FE2653BE63000FA0E7 /* SNSBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C85E0FC2653BE63000FA0E7 /* SNSBookCVC.xib */; };
+		3C85E1012653C393000FA0E7 /* SNSBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C85E0FF2653C393000FA0E7 /* SNSBookTVC.swift */; };
+		3C85E1022653C393000FA0E7 /* SNSBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C85E1002653C393000FA0E7 /* SNSBookTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +74,10 @@
 		3C8112BF265362C50063AF30 /* BasicBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBookCVC.swift; sourceTree = "<group>"; };
 		3C8112C0265362C50063AF30 /* BasicBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicBookCVC.xib; sourceTree = "<group>"; };
 		3C8112CD26536B9F0063AF30 /* BasicBookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBookData.swift; sourceTree = "<group>"; };
+		3C85E0FB2653BE63000FA0E7 /* SNSBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSBookCVC.swift; sourceTree = "<group>"; };
+		3C85E0FC2653BE63000FA0E7 /* SNSBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNSBookCVC.xib; sourceTree = "<group>"; };
+		3C85E0FF2653C393000FA0E7 /* SNSBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSBookTVC.swift; sourceTree = "<group>"; };
+		3C85E1002653C393000FA0E7 /* SNSBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNSBookTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +196,10 @@
 				3C383DD926539C7900C47952 /* TopicBookTVC.xib */,
 				3C383DDC26539D3B00C47952 /* TopicBookCVC.swift */,
 				3C383DDD26539D3B00C47952 /* TopicBookCVC.xib */,
+				3C85E0FB2653BE63000FA0E7 /* SNSBookCVC.swift */,
+				3C85E0FC2653BE63000FA0E7 /* SNSBookCVC.xib */,
+				3C85E0FF2653C393000FA0E7 /* SNSBookTVC.swift */,
+				3C85E1002653C393000FA0E7 /* SNSBookTVC.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -290,10 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C8112BD26535F2C0063AF30 /* BasicBookTVC.xib in Resources */,
+				3C85E1022653C393000FA0E7 /* SNSBookTVC.xib in Resources */,
 				3C20081C2652BD2400C0FAAF /* NotoSansKR-Regular.otf in Resources */,
 				3C383DD72653892100C47952 /* NotoSansKR-Medium.otf in Resources */,
 				3C20081A2652BD2400C0FAAF /* NotoSansKR-Black.otf in Resources */,
 				3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */,
+				3C85E0FE2653BE63000FA0E7 /* SNSBookCVC.xib in Resources */,
 				3C2008182652BD2400C0FAAF /* NotoSansKR-Thin.otf in Resources */,
 				3C2008162652BD2400C0FAAF /* NotoSansKR-Light.otf in Resources */,
 				3C383DDF26539D3B00C47952 /* TopicBookCVC.xib in Resources */,
@@ -323,6 +337,8 @@
 				3C0E0F94264FA92700AB9405 /* SceneDelegate.swift in Sources */,
 				3C8112B5265355AB0063AF30 /* AudioHeaderTVC.swift in Sources */,
 				3C383DDA26539C7900C47952 /* TopicBookTVC.swift in Sources */,
+				3C85E0FD2653BE63000FA0E7 /* SNSBookCVC.swift in Sources */,
+				3C85E1012653C393000FA0E7 /* SNSBookTVC.swift in Sources */,
 				3C8112CE26536B9F0063AF30 /* BasicBookData.swift in Sources */,
 				3C8112C1265362C50063AF30 /* BasicBookCVC.swift in Sources */,
 				3C8112BC26535F2C0063AF30 /* BasicBookTVC.swift in Sources */,
