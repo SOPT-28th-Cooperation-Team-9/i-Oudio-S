@@ -1,31 +1,19 @@
 //
-//  AudioHomeVC.swift
+//  TabbarController.swift
 //  i-Oudio-S
 //
-//  Created by 장혜령 on 2021/05/15.
+//  Created by 홍진석 on 2021/05/18.
 //
 
 import UIKit
 
-class AudioHomeVC: UIViewController {
+class TabbarController: UITabBarController {
 
-    @IBOutlet weak var nameLabel: UILabel!
-    var name: String = "혜령"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
+
         // Do any additional setup after loading the view.
     }
-    
-    func setUI(){
-        //사용 방법
-        nameLabel.textColor = UIColor.mainPurpule
-        nameLabel.font = UIFont.myBoldSystemFont(ofSize: 20)
-        
-    }
-    
-    
     
 
     /*

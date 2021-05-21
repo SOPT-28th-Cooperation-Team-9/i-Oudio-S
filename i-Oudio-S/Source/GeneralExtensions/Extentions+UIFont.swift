@@ -13,7 +13,7 @@ struct AppFontName {
     static let light = "NotoSansKR-Light"
     static let regular = "NotoSansKR-Regular"
     static let medium = "NotoSansKR-Medium"
-    static let bold = "AppleSDGothicNeo-Bold"
+    static let bold = "NotoSansKR-Bold"
     static let black = "NotoSansKR-Black"
 }
 
