@@ -4,13 +4,15 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>NotoSansKR-Thin.otf</string>
-		<string>NotoSansKR-Regular.otf</string>
-		<string>NotoSansKR-Medium.otf</string>
 		<string>NotoSansKR-Light.otf</string>
 		<string>NotoSansKR-Bold.otf</string>
+		<string>NotoSansKR-Thin.otf</string>
 		<string>NotoSansKR-Black.otf</string>
+		<string>NotoSansKR-Medium.otf</string>
+		<string>NotoSansKR-Regular.otf</string>
 	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -43,7 +45,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>HRAudio</string>
+					<string>Main</string>
 				</dict>
 			</array>
 		</dict>

@@ -27,6 +27,9 @@ class AudioBookHomeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
     
     func registerXib(){
         let headerNib = UINib(nibName: AudioHeaderTVC.identifier, bundle: nil)
@@ -38,11 +41,13 @@ class AudioBookHomeVC: UIViewController {
         let topicBookNib = UINib(nibName: TopicBookTVC.identifier, bundle: nil)
         mainTableView.register(topicBookNib, forCellReuseIdentifier: TopicBookTVC.identifier)
         
-        let snsBookNib =  UINib(nibName: SNSBookTVC.identifier, bundle: nil)
-        mainTableView.register(snsBookNib, forCellReuseIdentifier: SNSBookTVC.identifier)
+        let snsBookNib =  UINib(nibName: SNSSaleBookTVC.identifier, bundle: nil)
+        mainTableView.register(snsBookNib, forCellReuseIdentifier: SNSSaleBookTVC.identifier)
     }
 
     func setUI(){
+        self.navigationController?.isNavigationBarHidden = true
+
         playingAudioNameLabel.textColor = UIColor.mainGray1
         playingAudioNameLabel.font = UIFont.myMediumSystemFont(ofSize: 13)
         playingAudioNameLabel.text = "재생목록이 없습니다."
@@ -64,9 +69,11 @@ extension AudioBookHomeVC: UITableViewDelegate{
         
         switch indexPath.section {
         case 0:
-            return width * (228/375)
+            return width * (248/375)
+        case 1 :
+            return width * (343/375)
         case 2:
-            return width * (286/375)
+            return width * (262/375) // 286
         case 3:
             return width * (145/375)
         default:
@@ -98,9 +105,22 @@ extension AudioBookHomeVC: UITableViewDataSource{
             
             cell.bookList = fictionBooks
             cell.setTitleText(title: "믿음사 세계문학 10권 70% 할인")
+            print("cell이 셋팅")
+            cell.selecteBookAction = { bookData in
+                guard let nextVC = self.storyboard?.instantiateViewController(identifier: DetailBookVC.identifier) as? DetailBookVC else {
+                    return false
+                }
+                nextVC.bookData = bookData
+                
+                self.navigationController?.pushViewController(nextVC, animated: true)
+                //self.present(nextVC, animated: true, completion: nil)
+                print("클로져 구현")
+                return true
+            }
+            
             return cell
         case 2:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: SNSBookTVC.identifier) as? SNSBookTVC else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: SNSSaleBookTVC.identifier) as? SNSSaleBookTVC else {
                 return UITableViewCell()
             }
             

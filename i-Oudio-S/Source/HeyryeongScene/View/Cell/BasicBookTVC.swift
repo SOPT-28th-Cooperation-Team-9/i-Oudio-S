@@ -13,6 +13,8 @@ class BasicBookTVC: UITableViewCell {
     
     @IBOutlet weak var plusButton: UIButton!
     var bookList :[BasicBookData] = []
+    var selectedBook: BasicBookData?
+    var selecteBookAction: ((BasicBookData) -> (Bool))?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,7 +31,6 @@ class BasicBookTVC: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         
         // Configure the view for the selected state
     }
@@ -99,6 +100,17 @@ extension BasicBookTVC: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 9
     }
+    
+}
+
+extension BasicBookTVC: UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("BasicBookTVC에서 불림")
+        selectedBook = bookList[indexPath.row]
+        selecteBookAction?(selectedBook!)
+    }
+
+    
     
 }
 

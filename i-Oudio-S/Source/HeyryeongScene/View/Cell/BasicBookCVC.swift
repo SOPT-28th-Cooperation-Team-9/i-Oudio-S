@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class BasicBookCVC: UICollectionViewCell{
     
     static let identifier: String = "BasicBookCVC"
@@ -49,6 +50,8 @@ class BasicBookCVC: UICollectionViewCell{
         
         timeUIView.layer.cornerRadius = 1
     }
+    
+    
 
 }
 
