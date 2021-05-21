@@ -34,6 +34,7 @@ class AudioTVC: UITableViewCell {
     func setUI(){
         title.textColor = UIColor.white
         title.font = UIFont.myBoldSystemFont(ofSize: 17)
+        
     }
 }
 
