@@ -89,7 +89,6 @@ extension SnsBookTVC: UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets.init(top: 0, left: 18, bottom: 0, right: 18)
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
         return 9
