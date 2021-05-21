@@ -1,23 +1,23 @@
 {
   "images" : [
     {
-      "filename" : "rectangle1057.png",
       "idiom" : "universal",
+      "filename" : "playButton.png",
       "scale" : "1x"
     },
     {
-      "filename" : "rectangle1057@2x.png",
       "idiom" : "universal",
+      "filename" : "playButton@2x.png",
       "scale" : "2x"
     },
     {
-      "filename" : "rectangle1057@3x.png",
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "playButton@3x.png"
     }
   ],
   "info" : {
-    "author" : "xcode",
-    "version" : 1
+    "version" : 1,
+    "author" : "xcode"
   }
 }

@@ -1,19 +1,19 @@
 {
   "images" : [
     {
-      "filename" : "rectangle1071.png",
       "idiom" : "universal",
+      "filename" : "plus15.png",
       "scale" : "1x"
     },
     {
-      "filename" : "rectangle1071@2x.png",
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "plus15@2x.png"
     },
     {
-      "filename" : "rectangle1071@3x.png",
       "scale" : "3x",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "plus15@3x.png"
     }
   ],
   "info" : {
