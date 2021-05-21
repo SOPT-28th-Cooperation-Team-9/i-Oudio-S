@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--홈-->
+        <!--진석-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="Y6W-OH-hqX" customClass="JSHomeVC" customModule="i_Oudio_S" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,7 +189,7 @@
                             <constraint firstItem="GpF-TX-UtZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="rX3-p9-nCt"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="Frame 18" id="aO8-oA-UFQ"/>
+                    <tabBarItem key="tabBarItem" title="진석" image="Frame 18" id="aO8-oA-UFQ"/>
                     <connections>
                         <outlet property="mainBookSubTitle" destination="vcf-aw-U3C" id="Eyz-MZ-XPY"/>
                         <outlet property="mainBookTitle" destination="qxB-02-ZLQ" id="6LS-rh-OQq"/>
