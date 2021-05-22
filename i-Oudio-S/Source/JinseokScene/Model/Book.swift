@@ -8,10 +8,16 @@
 import Foundation
 
 struct Book : Codable{
-    var title : String = ""
-    var writer : String = ""
-    var reader : String = ""
-    var price : String = ""
+    var imageName : String?
+    var title : String?
+    var writer : String?
+    var reader : String?
+    var price : String?
     var detail : String?
+    
+    init(imageName : String, title : String){
+        self.imageName = imageName
+        self.title = title
+    }
 
 }

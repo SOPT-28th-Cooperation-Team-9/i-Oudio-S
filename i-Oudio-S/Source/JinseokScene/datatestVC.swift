@@ -1,20 +1,35 @@
 //
-//  PageOneVC.swift
+//  datatestVC.swift
 //  i-Oudio-S
 //
-//  Created by 장혜령 on 2021/05/21.
+//  Created by 홍진석 on 2021/05/22.
 //
 
 import UIKit
 
-class PageOneVC: UIViewController {
+class datatestVC: UIViewController {
 
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var writer: UILabel!
+    @IBOutlet weak var reader: UILabel!
+    @IBOutlet weak var price: UILabel!
+    
+    var book : Book?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
+        if let b = book{
+            name.text = b.title
+            writer.text = b.writer
+            reader.text = b.reader
+            price.text = b.price
+        }
+        
         // Do any additional setup after loading the view.
     }
     
+
     /*
     // MARK: - Navigation
 

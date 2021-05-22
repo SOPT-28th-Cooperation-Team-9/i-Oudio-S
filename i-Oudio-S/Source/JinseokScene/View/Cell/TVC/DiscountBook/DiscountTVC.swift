@@ -10,6 +10,7 @@ import UIKit
 class DiscountTVC: UITableViewCell {
     
     static let identifier = "DiscountTVC"
+    private var books : [Book]?
     
     @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var title: UILabel!
@@ -22,7 +23,6 @@ class DiscountTVC: UITableViewCell {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
         collectionView.register(UINib(nibName: SmallRectCVC.identifier, bundle: nil), forCellWithReuseIdentifier: SmallRectCVC.identifier)
     }
 
@@ -65,6 +65,20 @@ extension DiscountTVC : UICollectionViewDelegate{
   
         return 9
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //guard let nextVC = storyboard?.instantiateViewController(identifier: "datatestVC") else{return}
+        
+//        self.celldelegate = nextVC as? CellDelegate
+//        
+//        if let friend = tableView.cellForRow(at: indexPath) as? FriendsTableViewCell{
+//            celldelegate?.sendData(name: friend.nameLabel.text!, image: friend.Friendimage.image!)
+//        }
+//        
+//        nextVC.modalPresentationStyle = .overFullScreen
+//        
+//        self.present(nextVC, animated: true, completion: nil)
+    }
 }
 extension DiscountTVC : UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -77,7 +91,7 @@ extension DiscountTVC : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallRectCVC.identifier, for: indexPath) as? SmallRectCVC else {return UICollectionViewCell()}
         cell.backgroundColor = self.backgroundColor
-        cell.bookTitle.text = "데미안 믿음사\n세계문학,완독"
+        cell.bookTitle.text = "데미안 민음사\n세계문학,완독"
         cell.writer.text = "Writer test"
         cell.price.text = "Price test"
         

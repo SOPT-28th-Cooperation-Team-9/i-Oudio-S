@@ -42,6 +42,10 @@
                 <constraint firstItem="HfE-Ru-X9p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tFA-L3-JHU"/>
             </constraints>
             <size key="customSize" width="65" height="87"/>
+            <connections>
+                <outlet property="image" destination="HfE-Ru-X9p" id="3sf-2B-eCN"/>
+                <outlet property="title" destination="J3h-gE-CSF" id="aye-ea-XYU"/>
+            </connections>
             <point key="canvasLocation" x="61.594202898550726" y="98.772321428571431"/>
         </collectionViewCell>
     </objects>

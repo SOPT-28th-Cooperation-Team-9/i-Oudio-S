@@ -10,6 +10,7 @@ import UIKit
 class TrendTVC : UITableViewCell {
     
     static let identifier = "TrendTVC"
+    private var books : [Book]?
     
     @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var title: UILabel!
