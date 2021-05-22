@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopicBookCVC" id="gTV-IL-0wX" customClass="TopicBookCVC" customModule="i_Oudio_S" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="92" height="122"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_audio1" translatesAutoresizingMaskIntoConstraints="NO" id="qd9-HY-lWD">
+                        <rect key="frame" x="2" y="0.0" width="88" height="100"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZJ-eT-B5y">
+                        <rect key="frame" x="30.5" y="104" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qd9-HY-lWD" secondAttribute="trailing" constant="2" id="cmA-QB-M3y"/>
+                <constraint firstItem="qd9-HY-lWD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="lXz-1y-Z4w"/>
+                <constraint firstAttribute="bottom" secondItem="qd9-HY-lWD" secondAttribute="bottom" constant="22" id="mAg-A8-jno"/>
+                <constraint firstItem="qd9-HY-lWD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oVa-er-RjD"/>
+                <constraint firstItem="FZJ-eT-B5y" firstAttribute="top" secondItem="qd9-HY-lWD" secondAttribute="bottom" constant="4" id="sFm-FE-SIT"/>
+                <constraint firstItem="FZJ-eT-B5y" firstAttribute="centerX" secondItem="qd9-HY-lWD" secondAttribute="centerX" id="xPR-7U-dTy"/>
+            </constraints>
+            <size key="customSize" width="92" height="122"/>
+            <connections>
+                <outlet property="imageView" destination="qd9-HY-lWD" id="KlA-Dy-k0P"/>
+                <outlet property="topicLabel" destination="FZJ-eT-B5y" id="BVp-za-kEL"/>
+            </connections>
+            <point key="canvasLocation" x="168.11594202898553" y="120.53571428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="book_audio1" width="65" height="65"/>
+    </resources>
+</document>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class JSHomeVC: UIViewController {
 
     @IBOutlet weak var mainTitle: UILabel!
     @IBOutlet weak var mainBookView: UIView!
@@ -58,7 +58,7 @@ class HomeVC: UIViewController {
     }
 }
 
-extension HomeVC: UITableViewDelegate{
+extension JSHomeVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row{
         case 0: return 314
@@ -70,7 +70,7 @@ extension HomeVC: UITableViewDelegate{
     }
 }
 
-extension HomeVC : UITableViewDataSource{
+extension JSHomeVC : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sections.count
     }
