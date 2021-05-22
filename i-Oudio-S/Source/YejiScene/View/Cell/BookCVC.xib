@@ -44,6 +44,12 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eq-yK-a53">
+                        <rect key="frame" x="48" y="111" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -53,6 +59,7 @@
                 <constraint firstItem="4qh-nI-efH" firstAttribute="top" secondItem="JvP-TJ-9Am" secondAttribute="bottom" constant="4" id="4ZI-Zm-HBO"/>
                 <constraint firstAttribute="trailing" secondItem="4qh-nI-efH" secondAttribute="trailing" id="9B1-Vd-dEK"/>
                 <constraint firstItem="4qh-nI-efH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AcT-Jm-PJk"/>
+                <constraint firstItem="0eq-yK-a53" firstAttribute="trailing" secondItem="gWF-4e-5nf" secondAttribute="trailing" constant="-5" id="B4V-Us-ycE"/>
                 <constraint firstItem="JvP-TJ-9Am" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Hlp-cI-uHG"/>
                 <constraint firstItem="gWF-4e-5nf" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" id="M9j-Mu-lxq"/>
                 <constraint firstItem="O8n-KY-JJz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QVm-3M-Rl0"/>
@@ -60,6 +67,7 @@
                 <constraint firstItem="JvP-TJ-9Am" firstAttribute="top" secondItem="O8n-KY-JJz" secondAttribute="bottom" constant="4" id="kza-ue-3SG"/>
                 <constraint firstAttribute="trailing" secondItem="JvP-TJ-9Am" secondAttribute="trailing" id="nag-T9-x8v"/>
                 <constraint firstAttribute="top" secondItem="gWF-4e-5nf" secondAttribute="top" id="qhO-Le-w8u"/>
+                <constraint firstItem="0eq-yK-a53" firstAttribute="bottom" secondItem="gWF-4e-5nf" secondAttribute="bottom" constant="-5" id="qzu-c7-vKR"/>
             </constraints>
             <size key="customSize" width="160" height="198"/>
             <connections>
@@ -67,6 +75,7 @@
                 <outlet property="bookImageView" destination="gWF-4e-5nf" id="MQT-rZ-rpP"/>
                 <outlet property="bookTitleTextView" destination="O8n-KY-JJz" id="E6o-BH-n3z"/>
                 <outlet property="priceLabel" destination="4qh-nI-efH" id="IeU-MD-fB4"/>
+                <outlet property="runningTimeLabel" destination="0eq-yK-a53" id="duT-C9-mhI"/>
             </connections>
             <point key="canvasLocation" x="-70.28985507246378" y="190.17857142857142"/>
         </collectionViewCell>

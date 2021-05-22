@@ -42,6 +42,11 @@
 		AA4DC96226538804009FA74B /* SnsBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC96026538804009FA74B /* SnsBookTVC.xib */; };
 		AA4DC96A26538E1A009FA74B /* SnsBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */; };
 		AA4DC96B26538E1A009FA74B /* SnsBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */; };
+		AABF7D302657A456003B17DE /* TopicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF7D2F2657A456003B17DE /* TopicDataModel.swift */; };
+		AABF7D612658C36C003B17DE /* TopicBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF7D5F2658C36C003B17DE /* TopicBookTVC.swift */; };
+		AABF7D622658C36C003B17DE /* TopicBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABF7D602658C36C003B17DE /* TopicBookTVC.xib */; };
+		AABF7D6A2658C52E003B17DE /* TopicBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF7D682658C52E003B17DE /* TopicBookCVC.swift */; };
+		AABF7D6B2658C52E003B17DE /* TopicBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABF7D692658C52E003B17DE /* TopicBookCVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +87,11 @@
 		AA4DC96026538804009FA74B /* SnsBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnsBookTVC.xib; sourceTree = "<group>"; };
 		AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnsBookCVC.swift; sourceTree = "<group>"; };
 		AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnsBookCVC.xib; sourceTree = "<group>"; };
+		AABF7D2F2657A456003B17DE /* TopicDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopicDataModel.swift; path = ../../../../../TopicDataModel.swift; sourceTree = "<group>"; };
+		AABF7D5F2658C36C003B17DE /* TopicBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookTVC.swift; sourceTree = "<group>"; };
+		AABF7D602658C36C003B17DE /* TopicBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicBookTVC.xib; sourceTree = "<group>"; };
+		AABF7D682658C52E003B17DE /* TopicBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookCVC.swift; sourceTree = "<group>"; };
+		AABF7D692658C52E003B17DE /* TopicBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicBookCVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				AA4DC94B2652D265009FA74B /* BookDataModel.swift */,
+				AABF7D2F2657A456003B17DE /* TopicDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +289,10 @@
 				AA4DC96026538804009FA74B /* SnsBookTVC.xib */,
 				AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */,
 				AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */,
+				AABF7D5F2658C36C003B17DE /* TopicBookTVC.swift */,
+				AABF7D602658C36C003B17DE /* TopicBookTVC.xib */,
+				AABF7D682658C52E003B17DE /* TopicBookCVC.swift */,
+				AABF7D692658C52E003B17DE /* TopicBookCVC.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -348,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C20081C2652BD2400C0FAAF /* NotoSansKR-Regular.otf in Resources */,
+				AABF7D6B2658C52E003B17DE /* TopicBookCVC.xib in Resources */,
 				3C20081A2652BD2400C0FAAF /* NotoSansKR-Black.otf in Resources */,
 				3C0E0F9E264FA92800AB9405 /* LaunchScreen.storyboard in Resources */,
 				3C20081B2652BD2400C0FAAF /* NotoSansKR-Medium.otf in Resources */,
@@ -359,13 +375,13 @@
 				AA4DC95626537D57009FA74B /* My.storyboard in Resources */,
 				AA4DC9342652670C009FA74B /* BookTVC.xib in Resources */,
 				AA4DC96226538804009FA74B /* SnsBookTVC.xib in Resources */,
+				AABF7D622658C36C003B17DE /* TopicBookTVC.xib in Resources */,
 				AA4DC91A265232F1009FA74B /* HeaderTVC.xib in Resources */,
 				3C0E0FAD264FAB3500AB9405 /* Audio.storyboard in Resources */,
 				AA4DC8F126518187009FA74B /* AudioStoryboard.storyboard in Resources */,
 				3C0E0F9B264FA92800AB9405 /* Assets.xcassets in Resources */,
 				3C2008172652BD2400C0FAAF /* NotoSansKR-Bold.otf in Resources */,
 				3C2008192652BD2400C0FAAF /* OFL.txt in Resources */,
-				3C0E0F99264FA92700AB9405 /* Main.storyboard in Resources */,
 				AA4DC96B26538E1A009FA74B /* SnsBookCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,14 +398,17 @@
 				3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */,
 				AA4DC94C2652D265009FA74B /* BookDataModel.swift in Sources */,
 				AA4DC9332652670C009FA74B /* BookTVC.swift in Sources */,
+				AABF7D302657A456003B17DE /* TopicDataModel.swift in Sources */,
 				AA4DC919265232F1009FA74B /* HeaderTVC.swift in Sources */,
 				3C0E0F92264FA92700AB9405 /* AppDelegate.swift in Sources */,
 				AA4DC90826519254009FA74B /* AudioMainVC.swift in Sources */,
 				AA4DC95C26537DF4009FA74B /* MyVC.swift in Sources */,
 				AA4DC96A26538E1A009FA74B /* SnsBookCVC.swift in Sources */,
+				AABF7D6A2658C52E003B17DE /* TopicBookCVC.swift in Sources */,
 				AA4DC96126538804009FA74B /* SnsBookTVC.swift in Sources */,
 				3C0E0F94264FA92700AB9405 /* SceneDelegate.swift in Sources */,
 				AA4DC95926537DE7009FA74B /* HomeVC.swift in Sources */,
+				AABF7D612658C36C003B17DE /* TopicBookTVC.swift in Sources */,
 				AA4DC92626525DB6009FA74B /* LineSpacing+UILabel.swift in Sources */,
 				AA4DC94726526C52009FA74B /* BookCVC.swift in Sources */,
 				3C20081E2652BD4100C0FAAF /* Extentions+UIFont.swift in Sources */,
@@ -461,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -516,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

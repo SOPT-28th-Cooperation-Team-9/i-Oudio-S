@@ -19,41 +19,28 @@ class BookCVC: UICollectionViewCell {
     }
     @IBOutlet weak var authorTextView: UILabel! {
         didSet {
-//            let padding = authorTextView.textContainer.lineFragmentPadding
-//            authorTextView.textContainerInset = UIEdgeInsets(top: 0, left: -padding, bottom: 0, right: padding)
             authorTextView.textColor = .mainGray1
             authorTextView.font = UIFont.myMediumSystemFont(ofSize: 11)
         }
     }
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var runningTimeLabel: UILabel! {
+        didSet {
+            runningTimeLabel.backgroundColor = .mainGray1
+            runningTimeLabel.textColor = .white
+            runningTimeLabel.font = UIFont.myMediumSystemFont(ofSize: 10)
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-
-        
-
-        // Initialization code
-//        authorTextView.translatesAutoresizingMaskIntoConstraints = false
-//        bookTitleTextView.translatesAutoresizingMaskIntoConstraints = false
-//        authorTextView.topAnchor.constraint(equalTo: bookTitleTextView.bottomAnchor, constant: 4).isActive = true
-//        authorTextView.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
-//        authorTextView.heightAnchor.constraint(equalToConstant: 32).isActive = true
-//        
-//        bookTitleTextView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-//        
-//        priceLabel.topAnchor.constraint(equalTo: authorTextView.bottomAnchor, constant: 4).isActive = true
-//        
-//        authorTextView.isScrollEnabled = false
-//        bookTitleTextView.isScrollEnabled = false
-//        priceLabel.translatesAutoresizingMaskIntoConstraints = false
-        
     }
     
     func setData(bookImage: String,
                  bookTitle: String,
                  author: String,
-                 price: String) {
+                 price: String,
+                 runningTime: String) {
         
         if let image = UIImage(named: bookImage) {
             bookImageView.image = image
@@ -61,14 +48,7 @@ class BookCVC: UICollectionViewCell {
         bookTitleTextView.text = bookTitle
         authorTextView.text = author
         priceLabel.text = price
+        runningTimeLabel.text = runningTime
+    }
         
-    }
-    
-    override func prepareForReuse() {
-        bookImageView = nil
-        bookTitleTextView = nil
-        authorTextView = nil
-        priceLabel = nil
-    }
-    
 }

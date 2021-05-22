@@ -28,7 +28,7 @@ class BookTVC: UITableViewCell {
         didSet {
             bookCollectionView.delegate = self
             bookCollectionView.dataSource = self
-            bookCollectionView.backgroundColor = .mainGrayBackground
+//            bookCollectionView.backgroundColor = .mainGrayBackground
         }
     }
     
@@ -70,7 +70,7 @@ extension BookTVC: UICollectionViewDataSource {
                   return UICollectionViewCell()
               }
         
-        cell.setData(bookImage: bookList[indexPath.row].bookImage, bookTitle: bookList[indexPath.row].bookTitle, author: bookList[indexPath.row].author, price: bookList[indexPath.row].price)
+        cell.setData(bookImage: bookList[indexPath.row].bookImage, bookTitle: bookList[indexPath.row].bookTitle, author: bookList[indexPath.row].author, price: bookList[indexPath.row].price, runningTime: bookList[indexPath.row].runningTime)
         
         return cell
     }

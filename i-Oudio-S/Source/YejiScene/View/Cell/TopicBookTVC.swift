@@ -2,18 +2,18 @@
 //  TopicBookTVC.swift
 //  i-Oudio-S
 //
-//  Created by 윤예지 on 2021/05/19.
+//  Created by 윤예지 on 2021/05/22.
 //
 
 import UIKit
 
 class TopicBookTVC: UITableViewCell {
-    
-    @IBOutlet weak var titleLabel: UILabel! {
+
+    @IBOutlet weak var topicTitleLabel: UILabel! {
         didSet {
-            titleLabel.font = UIFont.myBoldSystemFont(ofSize: 17)
-            titleLabel.text = "주제별 오디오북"
-            titleLabel.textColor = .white
+            topicTitleLabel.text = "주제별 오디오북"
+            topicTitleLabel.textColor = .white
+            topicTitleLabel.font =  UIFont.myBoldSystemFont(ofSize: 17)
         }
     }
     @IBOutlet weak var topicCollectionView: UICollectionView! {
@@ -25,17 +25,16 @@ class TopicBookTVC: UITableViewCell {
     }
     
     var topicList: [topicDataModel] = [
-        topicDataModel(topicImage: "topicImage1", topicName: "소설"),
-        topicDataModel(topicImage: "topicImage2", topicName: "시/에세이"),
-        topicDataModel(topicImage: "topicImage3", topicName: "인문"),
-        topicDataModel(topicImage: "topicImage4", topicName: "사회/역사/문화"),
-        topicDataModel(topicImage: "topicImage5", topicName: "경제/경영"),
-    ]
+           topicDataModel(topicImage: "topicImage1", topicName: "소설"),
+           topicDataModel(topicImage: "topicImage2", topicName: "시/에세이"),
+           topicDataModel(topicImage: "topicImage3", topicName: "인문"),
+           topicDataModel(topicImage: "topicImage4", topicName: "사회/역사/문화"),
+           topicDataModel(topicImage: "topicImage5", topicName: "경제/경영"),
+       ]
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        backgroundColor = .black
         registerXib()
     }
 
@@ -49,7 +48,6 @@ class TopicBookTVC: UITableViewCell {
         let topicBookCVC = UINib(nibName: "TopicBookCVC", bundle: nil)
         topicCollectionView.register(topicBookCVC, forCellWithReuseIdentifier: "TopicBookCVC")
     }
-    
 }
 
 extension TopicBookTVC : UICollectionViewDataSource {
@@ -61,9 +59,9 @@ extension TopicBookTVC : UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopicBookCVC", for: indexPath) as? TopicBookCVC else {
             return UICollectionViewCell()
         }
-      
+        
         cell.setData(topicImage: topicList[indexPath.row].topicImage, topic: topicList[indexPath.row].topicName)
-            
+        
         return cell
     }
     
@@ -76,11 +74,11 @@ extension TopicBookTVC : UICollectionViewDelegate {
 
 extension TopicBookTVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+        
         let width = UIScreen.main.bounds.width
-        let cellWidth = width * (65/375)
-        let height = cellWidth * (87/65)
-  
+        let cellWidth = width * (68/375)
+        let height = cellWidth * (87/68)
+        
         return CGSize(width: cellWidth, height: height)
     }
     
