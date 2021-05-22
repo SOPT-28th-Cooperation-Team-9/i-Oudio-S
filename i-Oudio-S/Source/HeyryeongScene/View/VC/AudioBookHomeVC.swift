@@ -13,6 +13,7 @@ class AudioBookHomeVC: UIViewController {
     var poemBooks: [BasicBookData] = []
     var topicBooks: [TopicBookData] = []
     var snsBooks: [BasicBookData] = []
+    var snsTitleList:[String] = ["김영하", "김영하2"]
     
     @IBOutlet weak var playingAudioNameLabel: UILabel!
     
@@ -38,8 +39,8 @@ class AudioBookHomeVC: UIViewController {
         let basicBookNib = UINib(nibName: BasicBookTVC.identifier, bundle: nil)
         mainTableView.register(basicBookNib, forCellReuseIdentifier: BasicBookTVC.identifier)
         
-        let topicBookNib = UINib(nibName: TopicBookTVC.identifier, bundle: nil)
-        mainTableView.register(topicBookNib, forCellReuseIdentifier: TopicBookTVC.identifier)
+        let topicBookNib = UINib(nibName: HRTopicBookTVC.identifier, bundle: nil)
+        mainTableView.register(topicBookNib, forCellReuseIdentifier: HRTopicBookTVC.identifier)
         
         let snsBookNib =  UINib(nibName: SNSSaleBookTVC.identifier, bundle: nil)
         mainTableView.register(snsBookNib, forCellReuseIdentifier: SNSSaleBookTVC.identifier)
@@ -73,7 +74,7 @@ extension AudioBookHomeVC: UITableViewDelegate{
         case 1 :
             return width * (343/375)
         case 2:
-            return width * (262/375) // 286
+            return width * (286/375) 
         case 3:
             return width * (145/375)
         default:
@@ -125,10 +126,11 @@ extension AudioBookHomeVC: UITableViewDataSource{
             }
             
             cell.bookList = snsBooks
+            cell.titleList = snsTitleList
             return cell
             
         case 3:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: TopicBookTVC.identifier) as? TopicBookTVC else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: HRTopicBookTVC.identifier) as? HRTopicBookTVC else {
                 return UITableViewCell()
             }
             
@@ -160,6 +162,7 @@ extension AudioBookHomeVC{
         setFictionBooks()
         setPoemBooks()
         setTopicBookList()
+        setSNSBookList()
     }
     
     func setFictionBooks(){
@@ -227,4 +230,17 @@ extension AudioBookHomeVC{
         ])
         
     }
+    
+    func setSNSBookList(){
+        snsBooks.append(contentsOf: [
+            BasicBookData.init(imageName: "book_sns1",
+                               title: "어린이라는 세계",
+                               author: "김소영 저\n여민정 낭독", price: 7_000, time: 615),
+            BasicBookData.init(imageName: "book_sns2",
+                               title: "어린이라는 세계",
+                               author: "김소영 저\n여민정 낭독", price: 7_000, time: 615),
+            
+        ])
+    }
+    
 }
