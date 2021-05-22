@@ -26,7 +26,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OY3-j7-7UX">
                                             <rect key="frame" x="0.0" y="81" width="414" height="161"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxB-02-ZLQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxB-02-ZLQ">
                                                     <rect key="frame" x="18" y="18" width="267" height="20.5"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="'유퀴즈 출연 김범석 의사의">
@@ -37,7 +37,7 @@
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG4-OD-U1E">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG4-OD-U1E">
                                                     <rect key="frame" x="18" y="41.5" width="41.5" height="20.5"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
@@ -56,7 +56,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcf-aw-U3C">
-                                                    <rect key="frame" x="18" y="90" width="41.5" height="20.5"/>
+                                                    <rect key="frame" x="18" y="90" width="41.5" height="58"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -73,6 +73,7 @@
                                                 <constraint firstItem="vcf-aw-U3C" firstAttribute="leading" secondItem="OY3-j7-7UX" secondAttribute="leading" constant="18" id="QzL-5a-tw9"/>
                                                 <constraint firstItem="EcD-RQ-KKb" firstAttribute="leading" secondItem="OY3-j7-7UX" secondAttribute="leading" constant="18" id="Uwj-zg-ovO"/>
                                                 <constraint firstItem="qxB-02-ZLQ" firstAttribute="leading" secondItem="OY3-j7-7UX" secondAttribute="leading" constant="18" id="bHo-vS-NLK"/>
+                                                <constraint firstAttribute="bottom" secondItem="vcf-aw-U3C" secondAttribute="bottom" constant="13" id="kTg-pq-Jkx"/>
                                                 <constraint firstAttribute="trailing" secondItem="EcD-RQ-KKb" secondAttribute="trailing" constant="18" id="oGc-hf-kAe"/>
                                                 <constraint firstItem="pG4-OD-U1E" firstAttribute="top" secondItem="qxB-02-ZLQ" secondAttribute="bottom" constant="3" id="rKs-pB-yLf"/>
                                             </constraints>
@@ -147,20 +148,20 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-xy-Gb5">
-                                        <rect key="frame" x="283" y="14" width="113" height="25"/>
+                                        <rect key="frame" x="286" y="14" width="110" height="25"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC4-fJ-SXH">
-                                                <rect key="frame" x="0.0" y="0.0" width="27" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="26" height="25"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="Frame 57"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfV-27-40p">
-                                                <rect key="frame" x="43" y="0.0" width="27" height="25"/>
+                                                <rect key="frame" x="42" y="0.0" width="26" height="25"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="Frame 59"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VC-ff-eXv">
-                                                <rect key="frame" x="86" y="0.0" width="27" height="25"/>
+                                                <rect key="frame" x="84" y="0.0" width="26" height="25"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="Frame 60"/>
                                             </button>
