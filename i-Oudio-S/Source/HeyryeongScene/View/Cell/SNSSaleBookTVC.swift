@@ -11,7 +11,7 @@ class SNSSaleBookTVC: UITableViewCell {
 
     static let identifier = "SNSSaleBookTVC"
     var bookList: [BasicBookData] = []
-    
+    var titleList: [String] = []
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var plusButton: UIButton!
     
@@ -20,21 +20,21 @@ class SNSSaleBookTVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         registerXib()
-        setUI()
-        setDelegate()
+        //setDelegate()
         
-        // Initialization code
+        contentsCollectionView.backgroundColor = .yellow
+        contentsCollectionView.dataSource = self
+        contentsCollectionView.delegate = self
+        setUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func registerXib(){
-        let nibName = UINib(nibName: SNSSaleBookCVC.identifier, bundle: nil)
-        contentsCollectionView.register(nibName, forCellWithReuseIdentifier: SNSSaleBookCVC.identifier)
+        let nibName = UINib(nibName: "SNSSaleBookCVC", bundle: nil)
+        contentsCollectionView.register(nibName, forCellWithReuseIdentifier: "SNSSaleBookCVC")
     }
     
     
@@ -54,23 +54,25 @@ class SNSSaleBookTVC: UITableViewCell {
         contentsCollectionView.delegate = self
     }
     
-    
 }
 
 extension SNSSaleBookTVC: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        bookList.count
+        print(bookList.count)
+        return bookList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SNSSaleBookCVC.identifier, for: indexPath) as? SNSSaleBookCVC else {
+            print("ddd")
             return UICollectionViewCell()
         }
         
-        cell.setContentData(book: bookList[indexPath.row])
+        cell.setContentData(book: bookList[indexPath.item])
+        cell.setCellTitle(title: titleList[indexPath.item])
+        print("cell 로딩 ok , \(indexPath.row)")
         return cell
     }
-    
     
 }
 
@@ -85,13 +87,13 @@ extension SNSSaleBookTVC: UICollectionViewDelegateFlowLayout{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.zero
+        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 10
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 9
+        return 10
     }
     
 }
