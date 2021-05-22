@@ -11,17 +11,16 @@ class BookTVC: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
-            titleLabel.text = "민음사 세계문학 10권 70% 할인"
             titleLabel.textColor = .white
-//            titleLabel.font = UIFont.NotoSansFont(weight: .Bold, size: 17)
+            titleLabel.font = UIFont.myBoldSystemFont(ofSize: 17)
         }
     }
     
     @IBOutlet weak var moreLabel: UILabel! {
         didSet {
             moreLabel.text = "더보기"
-            moreLabel.textColor = UIColor(red: (126 / 255), green: (126 / 255), blue: (126 / 255), alpha: 1.0)
-//            moreLabel.font = UIFont.NotoSansFont( size: 13)
+            moreLabel.textColor = .mainGray1
+            moreLabel.font = UIFont.myMediumSystemFont(ofSize: 13)
         }
     }
     
@@ -29,16 +28,16 @@ class BookTVC: UITableViewCell {
         didSet {
             bookCollectionView.delegate = self
             bookCollectionView.dataSource = self
-            bookCollectionView.backgroundColor = UIColor(red: (33 / 255), green: (33 / 255), blue: (33 / 255), alpha: 1.0)
+//            bookCollectionView.backgroundColor = .mainGrayBackground
         }
     }
     
-    var bookData : [BookDataModel] = []
+    var bookList: [BookDataModel] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        backgroundColor = UIColor(red: (33 / 255), green: (33 / 255), blue: (33 / 255), alpha: 1.0)
+        backgroundColor = .mainGrayBackground
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -50,6 +49,10 @@ class BookTVC: UITableViewCell {
         bookCollectionView.register(bookCVC, forCellWithReuseIdentifier: "BookCVC")
     }
     
+    func setData(bookList: [BookDataModel]) {
+        self.bookList = bookList
+    }
+    
 }
 
 
@@ -59,7 +62,7 @@ extension BookTVC: UICollectionViewDelegate {
 
 extension BookTVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return bookList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -67,7 +70,7 @@ extension BookTVC: UICollectionViewDataSource {
                   return UICollectionViewCell()
               }
         
-        cell.setData(bookImage: "rectangle1071", bookTitle: "위대한 유산(민음사 세계문학, 완...", author: "찰스 디킨스 저 서원석 외 1인 낭독", price: "대여 6,000원")
+        cell.setData(bookImage: bookList[indexPath.row].bookImage, bookTitle: bookList[indexPath.row].bookTitle, author: bookList[indexPath.row].author, price: bookList[indexPath.row].price, runningTime: bookList[indexPath.row].runningTime)
         
         return cell
     }
