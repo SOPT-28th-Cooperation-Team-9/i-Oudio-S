@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TopicBookTVC: UITableViewCell {
+class yeji_TopicBookTVC: UITableViewCell {
 
     @IBOutlet weak var topicTitleLabel: UILabel! {
         didSet {
@@ -45,18 +45,18 @@ class TopicBookTVC: UITableViewCell {
     }
     
     func registerXib() {
-        let topicBookCVC = UINib(nibName: "TopicBookCVC", bundle: nil)
-        topicCollectionView.register(topicBookCVC, forCellWithReuseIdentifier: "TopicBookCVC")
+        let topicBookCVC = UINib(nibName: "yeji_TopicBookCVC", bundle: nil)
+        topicCollectionView.register(topicBookCVC, forCellWithReuseIdentifier: "yeji_TopicBookCVC")
     }
 }
 
-extension TopicBookTVC : UICollectionViewDataSource {
+extension yeji_TopicBookTVC : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopicBookCVC", for: indexPath) as? TopicBookCVC else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "yeji_TopicBookCVC", for: indexPath) as? yeji_TopicBookCVC else {
             return UICollectionViewCell()
         }
         
@@ -68,11 +68,11 @@ extension TopicBookTVC : UICollectionViewDataSource {
     
 }
 
-extension TopicBookTVC : UICollectionViewDelegate {
+extension yeji_TopicBookTVC : UICollectionViewDelegate {
     
 }
 
-extension TopicBookTVC: UICollectionViewDelegateFlowLayout {
+extension yeji_TopicBookTVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let width = UIScreen.main.bounds.width

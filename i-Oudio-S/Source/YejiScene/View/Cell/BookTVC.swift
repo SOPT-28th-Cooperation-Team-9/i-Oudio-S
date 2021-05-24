@@ -51,7 +51,9 @@ class BookTVC: UITableViewCell {
     
     func setData(bookList: [BookDataModel]) {
         self.bookList = bookList
+        self.bookCollectionView.reloadData()
     }
+    
     
 }
 
@@ -70,7 +72,7 @@ extension BookTVC: UICollectionViewDataSource {
                   return UICollectionViewCell()
               }
         
-        cell.setData(bookImage: bookList[indexPath.row].bookImage, bookTitle: bookList[indexPath.row].bookTitle, author: bookList[indexPath.row].author, price: bookList[indexPath.row].price, runningTime: bookList[indexPath.row].runningTime)
+        cell.setData(bookImage: bookList[indexPath.row].bookImage, bookTitle: bookList[indexPath.row].bookTitle, author: bookList[indexPath.row].author, price: "대여 \(bookList[indexPath.row].rentPrice)원", runningTime: bookList[indexPath.row].runningTime)
         
         return cell
     }
