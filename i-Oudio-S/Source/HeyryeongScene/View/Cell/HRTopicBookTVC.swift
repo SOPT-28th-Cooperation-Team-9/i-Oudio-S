@@ -1,5 +1,5 @@
 //
-//  TopicBookTVC.swift
+//  HRTopicBookTVC.swift
 //  i-Oudio-S
 //
 //  Created by JangHyeRyeong on 2021/05/18.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class TopicBookTVC: UITableViewCell {
+class HRTopicBookTVC: UITableViewCell {
 
-    static let identifier = "TopicBookTVC"
+    static let identifier = "HRTopicBookTVC"
     
     @IBOutlet weak var titleLabel: UILabel!
     var topicBookList : [TopicBookData] = []
@@ -36,8 +36,8 @@ class TopicBookTVC: UITableViewCell {
     }
     
     func registerXib(){
-        let nibName = UINib(nibName: "TopicBookCVC", bundle: nil)
-        topicCollectionView.register(nibName, forCellWithReuseIdentifier: "TopicBookCVC")
+        let nibName = UINib(nibName: "HRTopicBookCVC", bundle: nil)
+        topicCollectionView.register(nibName, forCellWithReuseIdentifier: "HRTopicBookCVC")
     }
     
     
@@ -48,13 +48,13 @@ class TopicBookTVC: UITableViewCell {
     
 }
 
-extension TopicBookTVC: UICollectionViewDataSource{
+extension HRTopicBookTVC: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = topicCollectionView.dequeueReusableCell(withReuseIdentifier: "TopicBookCVC", for: indexPath) as? TopicBookCVC else {
+        guard let cell = topicCollectionView.dequeueReusableCell(withReuseIdentifier: HRTopicBookCVC.identifier, for: indexPath) as? HRTopicBookCVC else {
             return UICollectionViewCell()
         }
         
@@ -66,7 +66,7 @@ extension TopicBookTVC: UICollectionViewDataSource{
     
 }
 
-extension TopicBookTVC: UICollectionViewDelegateFlowLayout{
+extension HRTopicBookTVC: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let width = UIScreen.main.bounds.width
@@ -81,7 +81,7 @@ extension TopicBookTVC: UICollectionViewDelegateFlowLayout{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 9
+        return 10
     }
     
 }

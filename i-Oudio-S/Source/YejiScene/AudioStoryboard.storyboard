@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t2b-ZG-6OQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,7 +14,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--오디오북-->
+        <!--예지-->
         <scene sceneID="1b5-CL-3uv">
             <objects>
                 <viewController storyboardIdentifier="AudioMainVC" id="t2b-ZG-6OQ" customClass="AudioMainVC" customModule="i_Oudio_S" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,7 +77,7 @@
                             <constraint firstItem="DGW-pH-k0c" firstAttribute="leading" secondItem="eWA-5d-gl4" secondAttribute="leading" id="qyh-GO-0vU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="오디오북" image="subtract" selectedImage="subtract" id="J89-q4-jnx"/>
+                    <tabBarItem key="tabBarItem" title="예지" image="subtract" selectedImage="subtract" id="J89-q4-jnx"/>
                     <connections>
                         <outlet property="MainTableView" destination="flY-7I-DXt" id="9RD-BS-dpr"/>
                     </connections>

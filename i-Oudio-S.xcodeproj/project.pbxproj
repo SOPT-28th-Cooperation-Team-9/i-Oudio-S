@@ -24,18 +24,18 @@
 		3C20081E2652BD4100C0FAAF /* Extentions+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */; };
 		3C383DD4265387BF00C47952 /* Extentions+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */; };
 		3C383DD72653892100C47952 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C383DD5265388B200C47952 /* NotoSansKR-Medium.otf */; };
-		3C383DDA26539C7900C47952 /* TopicBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C383DD826539C7900C47952 /* TopicBookTVC.swift */; };
-		3C383DDB26539C7900C47952 /* TopicBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C383DD926539C7900C47952 /* TopicBookTVC.xib */; };
-		3C383DDE26539D3B00C47952 /* TopicBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C383DDC26539D3B00C47952 /* TopicBookCVC.swift */; };
-		3C383DDF26539D3B00C47952 /* TopicBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C383DDD26539D3B00C47952 /* TopicBookCVC.xib */; };
-		3C383DE126539EC600C47952 /* TopicBookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C383DE026539EC600C47952 /* TopicBookData.swift */; };
+		3C383DDA26539C7900C47952 /* HRTopicBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C383DD826539C7900C47952 /* HRTopicBookTVC.swift */; };
+		3C383DDB26539C7900C47952 /* HRTopicBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C383DD926539C7900C47952 /* HRTopicBookTVC.xib */; };
+		3C383DDE26539D3B00C47952 /* HRTopicBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C383DDC26539D3B00C47952 /* HRTopicBookCVC.swift */; };
+		3C383DDF26539D3B00C47952 /* HRTopicBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C383DDD26539D3B00C47952 /* HRTopicBookCVC.xib */; };
+		3C680ED32658CA92003A067D /* BasicBookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C680ED12658CA92003A067D /* BasicBookData.swift */; };
+		3C680ED42658CA92003A067D /* TopicBookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C680ED22658CA92003A067D /* TopicBookData.swift */; };
 		3C8112B5265355AB0063AF30 /* AudioHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8112B3265355AB0063AF30 /* AudioHeaderTVC.swift */; };
 		3C8112B6265355AB0063AF30 /* AudioHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8112B4265355AB0063AF30 /* AudioHeaderTVC.xib */; };
 		3C8112BC26535F2C0063AF30 /* BasicBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8112BA26535F2C0063AF30 /* BasicBookTVC.swift */; };
 		3C8112BD26535F2C0063AF30 /* BasicBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8112BB26535F2C0063AF30 /* BasicBookTVC.xib */; };
 		3C8112C1265362C50063AF30 /* BasicBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8112BF265362C50063AF30 /* BasicBookCVC.swift */; };
 		3C8112C2265362C50063AF30 /* BasicBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8112C0265362C50063AF30 /* BasicBookCVC.xib */; };
-		3C8112CE26536B9F0063AF30 /* BasicBookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8112CD26536B9F0063AF30 /* BasicBookData.swift */; };
 		3C85E0FD2653BE63000FA0E7 /* SNSSaleBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C85E0FB2653BE63000FA0E7 /* SNSSaleBookCVC.swift */; };
 		3C85E0FE2653BE63000FA0E7 /* SNSSaleBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C85E0FC2653BE63000FA0E7 /* SNSSaleBookCVC.xib */; };
 		3C85E1012653C393000FA0E7 /* SNSSaleBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C85E0FF2653C393000FA0E7 /* SNSSaleBookTVC.swift */; };
@@ -51,6 +51,7 @@
 		3C94206E2657CA96000788F4 /* PageThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C94206D2657CA96000788F4 /* PageThreeVC.swift */; };
 		3C9420732657CDFD000788F4 /* DetailAudioTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9420712657CDFD000788F4 /* DetailAudioTVC.swift */; };
 		3C9420742657CDFD000788F4 /* DetailAudioTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9420722657CDFD000788F4 /* DetailAudioTVC.xib */; };
+		3CB349352670A82200EB1726 /* TopicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB349342670A82200EB1726 /* TopicDataModel.swift */; };
 		4F7A07542652D86700206472 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A07532652D86700206472 /* TabbarController.swift */; };
 		4F831E4A26518A6200676684 /* JSHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E4926518A6200676684 /* JSHomeVC.swift */; };
 		4F831E4C26518A6E00676684 /* Jinseok.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E4B26518A6E00676684 /* Jinseok.storyboard */; };
@@ -66,6 +67,7 @@
 		4F831E6F265247A300676684 /* LargeRectCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E6D265247A200676684 /* LargeRectCVC.xib */; };
 		4F831E76265254E200676684 /* RoundCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E74265254E200676684 /* RoundCVC.swift */; };
 		4F831E77265254E200676684 /* RoundCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E75265254E200676684 /* RoundCVC.xib */; };
+		4FED5A8826559A3F0035ED16 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED5A8726559A3F0035ED16 /* Book.swift */; };
 		AA4DC8F126518187009FA74B /* AudioStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC8F026518187009FA74B /* AudioStoryboard.storyboard */; };
 		AA4DC90826519254009FA74B /* AudioMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC90726519254009FA74B /* AudioMainVC.swift */; };
 		AA4DC919265232F1009FA74B /* HeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC917265232F1009FA74B /* HeaderTVC.swift */; };
@@ -84,8 +86,6 @@
 		AA4DC96226538804009FA74B /* SnsBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC96026538804009FA74B /* SnsBookTVC.xib */; };
 		AA4DC96A26538E1A009FA74B /* SnsBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */; };
 		AA4DC96B26538E1A009FA74B /* SnsBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */; };
-		4FED5A8826559A3F0035ED16 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED5A8726559A3F0035ED16 /* Book.swift */; };
-		AABF7D302657A456003B17DE /* TopicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF7D2F2657A456003B17DE /* TopicDataModel.swift */; };
 		AABF7D612658C36C003B17DE /* TopicBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF7D5F2658C36C003B17DE /* TopicBookTVC.swift */; };
 		AABF7D622658C36C003B17DE /* TopicBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABF7D602658C36C003B17DE /* TopicBookTVC.xib */; };
 		AABF7D6A2658C52E003B17DE /* TopicBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF7D682658C52E003B17DE /* TopicBookCVC.swift */; };
@@ -111,18 +111,18 @@
 		3C2008152652BD2400C0FAAF /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions+UIFont.swift"; sourceTree = "<group>"; };
 		3C383DD5265388B200C47952 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
-		3C383DD826539C7900C47952 /* TopicBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookTVC.swift; sourceTree = "<group>"; };
-		3C383DD926539C7900C47952 /* TopicBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicBookTVC.xib; sourceTree = "<group>"; };
-		3C383DDC26539D3B00C47952 /* TopicBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookCVC.swift; sourceTree = "<group>"; };
-		3C383DDD26539D3B00C47952 /* TopicBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicBookCVC.xib; sourceTree = "<group>"; };
-		3C383DE026539EC600C47952 /* TopicBookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookData.swift; sourceTree = "<group>"; };
+		3C383DD826539C7900C47952 /* HRTopicBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRTopicBookTVC.swift; sourceTree = "<group>"; };
+		3C383DD926539C7900C47952 /* HRTopicBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HRTopicBookTVC.xib; sourceTree = "<group>"; };
+		3C383DDC26539D3B00C47952 /* HRTopicBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRTopicBookCVC.swift; sourceTree = "<group>"; };
+		3C383DDD26539D3B00C47952 /* HRTopicBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HRTopicBookCVC.xib; sourceTree = "<group>"; };
+		3C680ED12658CA92003A067D /* BasicBookData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicBookData.swift; sourceTree = "<group>"; };
+		3C680ED22658CA92003A067D /* TopicBookData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicBookData.swift; sourceTree = "<group>"; };
 		3C8112B3265355AB0063AF30 /* AudioHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHeaderTVC.swift; sourceTree = "<group>"; };
 		3C8112B4265355AB0063AF30 /* AudioHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioHeaderTVC.xib; sourceTree = "<group>"; };
 		3C8112BA26535F2C0063AF30 /* BasicBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBookTVC.swift; sourceTree = "<group>"; };
 		3C8112BB26535F2C0063AF30 /* BasicBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicBookTVC.xib; sourceTree = "<group>"; };
 		3C8112BF265362C50063AF30 /* BasicBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBookCVC.swift; sourceTree = "<group>"; };
 		3C8112C0265362C50063AF30 /* BasicBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicBookCVC.xib; sourceTree = "<group>"; };
-		3C8112CD26536B9F0063AF30 /* BasicBookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBookData.swift; sourceTree = "<group>"; };
 		3C85E0FB2653BE63000FA0E7 /* SNSSaleBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSSaleBookCVC.swift; sourceTree = "<group>"; };
 		3C85E0FC2653BE63000FA0E7 /* SNSSaleBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNSSaleBookCVC.xib; sourceTree = "<group>"; };
 		3C85E0FF2653C393000FA0E7 /* SNSSaleBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSSaleBookTVC.swift; sourceTree = "<group>"; };
@@ -138,6 +138,7 @@
 		3C94206D2657CA96000788F4 /* PageThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageThreeVC.swift; sourceTree = "<group>"; };
 		3C9420712657CDFD000788F4 /* DetailAudioTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAudioTVC.swift; sourceTree = "<group>"; };
 		3C9420722657CDFD000788F4 /* DetailAudioTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAudioTVC.xib; sourceTree = "<group>"; };
+		3CB349342670A82200EB1726 /* TopicDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDataModel.swift; sourceTree = "<group>"; };
 		4F7A07532652D86700206472 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		4F831E4926518A6200676684 /* JSHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSHomeVC.swift; sourceTree = "<group>"; };
 		4F831E4B26518A6E00676684 /* Jinseok.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jinseok.storyboard; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 		4F831E6D265247A200676684 /* LargeRectCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeRectCVC.xib; sourceTree = "<group>"; };
 		4F831E74265254E200676684 /* RoundCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCVC.swift; sourceTree = "<group>"; };
 		4F831E75265254E200676684 /* RoundCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundCVC.xib; sourceTree = "<group>"; };
+		4FED5A8726559A3F0035ED16 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		AA4DC8F026518187009FA74B /* AudioStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AudioStoryboard.storyboard; sourceTree = "<group>"; };
 		AA4DC90726519254009FA74B /* AudioMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMainVC.swift; sourceTree = "<group>"; };
 		AA4DC917265232F1009FA74B /* HeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTVC.swift; sourceTree = "<group>"; };
@@ -171,8 +173,6 @@
 		AA4DC96026538804009FA74B /* SnsBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnsBookTVC.xib; sourceTree = "<group>"; };
 		AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnsBookCVC.swift; sourceTree = "<group>"; };
 		AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnsBookCVC.xib; sourceTree = "<group>"; };
-		4FED5A8726559A3F0035ED16 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		AABF7D2F2657A456003B17DE /* TopicDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopicDataModel.swift; path = ../../../../../TopicDataModel.swift; sourceTree = "<group>"; };
 		AABF7D5F2658C36C003B17DE /* TopicBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookTVC.swift; sourceTree = "<group>"; };
 		AABF7D602658C36C003B17DE /* TopicBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicBookTVC.xib; sourceTree = "<group>"; };
 		AABF7D682658C52E003B17DE /* TopicBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookCVC.swift; sourceTree = "<group>"; };
@@ -266,6 +266,7 @@
 		3C0E0FA9264FAAE500AB9405 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3C680ECB2658C5F1003A067D /* DetailScene */,
 				3C20080A2652B7D400C0FAAF /* GeneralExtensions */,
 				3C0E0FA7264FAABF00AB9405 /* HeyryeongScene */,
 				3C0E0FA6264FAAA300AB9405 /* JinseokScene */,
@@ -305,10 +306,10 @@
 				3C8112BB26535F2C0063AF30 /* BasicBookTVC.xib */,
 				3C8112BF265362C50063AF30 /* BasicBookCVC.swift */,
 				3C8112C0265362C50063AF30 /* BasicBookCVC.xib */,
-				3C383DD826539C7900C47952 /* TopicBookTVC.swift */,
-				3C383DD926539C7900C47952 /* TopicBookTVC.xib */,
-				3C383DDC26539D3B00C47952 /* TopicBookCVC.swift */,
-				3C383DDD26539D3B00C47952 /* TopicBookCVC.xib */,
+				3C383DD826539C7900C47952 /* HRTopicBookTVC.swift */,
+				3C383DD926539C7900C47952 /* HRTopicBookTVC.xib */,
+				3C383DDC26539D3B00C47952 /* HRTopicBookCVC.swift */,
+				3C383DDD26539D3B00C47952 /* HRTopicBookCVC.xib */,
 				3C85E0FB2653BE63000FA0E7 /* SNSSaleBookCVC.swift */,
 				3C85E0FC2653BE63000FA0E7 /* SNSSaleBookCVC.xib */,
 				3C85E0FF2653C393000FA0E7 /* SNSSaleBookTVC.swift */,
@@ -353,11 +354,26 @@
 			path = Noto_Sans_KR;
 			sourceTree = "<group>";
 		};
+		3C680ECB2658C5F1003A067D /* DetailScene */ = {
+			isa = PBXGroup;
+			children = (
+				3C680ED52658D774003A067D /* VC */,
+			);
+			path = DetailScene;
+			sourceTree = "<group>";
+		};
+		3C680ED52658D774003A067D /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		3C8112CC26536B930063AF30 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3C8112CD26536B9F0063AF30 /* BasicBookData.swift */,
-				3C383DE026539EC600C47952 /* TopicBookData.swift */,
+				3C680ED12658CA92003A067D /* BasicBookData.swift */,
+				3C680ED22658CA92003A067D /* TopicBookData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -459,8 +475,8 @@
 		AA4DC8EF26517F55009FA74B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3CB349342670A82200EB1726 /* TopicDataModel.swift */,
 				AA4DC94B2652D265009FA74B /* BookDataModel.swift */,
-				AABF7D2F2657A456003B17DE /* TopicDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -572,8 +588,8 @@
 				3C85E0FE2653BE63000FA0E7 /* SNSSaleBookCVC.xib in Resources */,
 				3C2008182652BD2400C0FAAF /* NotoSansKR-Thin.otf in Resources */,
 				3C2008162652BD2400C0FAAF /* NotoSansKR-Light.otf in Resources */,
-				3C383DDF26539D3B00C47952 /* TopicBookCVC.xib in Resources */,
-				3C383DDB26539C7900C47952 /* TopicBookTVC.xib in Resources */,
+				3C383DDF26539D3B00C47952 /* HRTopicBookCVC.xib in Resources */,
+				3C383DDB26539C7900C47952 /* HRTopicBookTVC.xib in Resources */,
 				3C0E0FAD264FAB3500AB9405 /* HRAudio.storyboard in Resources */,
 				AA4DC94826526C52009FA74B /* BookCVC.xib in Resources */,
 				AA4DC95326537D47009FA74B /* Home.storyboard in Resources */,
@@ -611,13 +627,15 @@
 			files = (
 				4F831E76265254E200676684 /* RoundCVC.swift in Sources */,
 				3C0E0FAB264FAB2400AB9405 /* AudioBookHomeVC.swift in Sources */,
-				3C383DE126539EC600C47952 /* TopicBookData.swift in Sources */,
+				3C680ED32658CA92003A067D /* BasicBookData.swift in Sources */,
 				3C0E0FAB264FAB2400AB9405 /* AudioBookHomeVC.swift in Sources */,
 				3C20080C2652B7F800C0FAAF /* Extentions+UIColor.swift in Sources */,
 				4F7A07542652D86700206472 /* TabbarController.swift in Sources */,
 				3C9420642657B2E7000788F4 /* DetailHeaderCVC.swift in Sources */,
+				3CB349352670A82200EB1726 /* TopicDataModel.swift in Sources */,
 				3C9420682657C9AF000788F4 /* PageVC.swift in Sources */,
 				4F831E6826519FB700676684 /* SmallRectCVC.swift in Sources */,
+				3C680ED42658CA92003A067D /* TopicBookData.swift in Sources */,
 				4F831E602651911100676684 /* TrendTVC.swift in Sources */,
 				4F831E5C26518FA400676684 /* DiscountTVC.swift in Sources */,
 				4F831E4A26518A6200676684 /* JSHomeVC.swift in Sources */,
@@ -625,7 +643,6 @@
 				3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */,
 				AA4DC94C2652D265009FA74B /* BookDataModel.swift in Sources */,
 				AA4DC9332652670C009FA74B /* BookTVC.swift in Sources */,
-				AABF7D302657A456003B17DE /* TopicDataModel.swift in Sources */,
 				AA4DC919265232F1009FA74B /* HeaderTVC.swift in Sources */,
 				3C0E0F92264FA92700AB9405 /* AppDelegate.swift in Sources */,
 				4F831E64265197F700676684 /* AudioTVC.swift in Sources */,
@@ -637,19 +654,18 @@
 				AA4DC96126538804009FA74B /* SnsBookTVC.swift in Sources */,
 				3C0E0F94264FA92700AB9405 /* SceneDelegate.swift in Sources */,
 				3C8112B5265355AB0063AF30 /* AudioHeaderTVC.swift in Sources */,
-				3C383DDA26539C7900C47952 /* TopicBookTVC.swift in Sources */,
+				3C383DDA26539C7900C47952 /* HRTopicBookTVC.swift in Sources */,
 				3C94206A2657CA6E000788F4 /* PageOneVC.swift in Sources */,
 				3C94205C265773FD000788F4 /* DetailBookVC.swift in Sources */,
 				3C85E0FD2653BE63000FA0E7 /* SNSSaleBookCVC.swift in Sources */,
 				3C94206C2657CA7D000788F4 /* PageTwoVC.swift in Sources */,
 				3C85E1012653C393000FA0E7 /* SNSSaleBookTVC.swift in Sources */,
 				3C94205F2657A531000788F4 /* MenuCVC.swift in Sources */,
-				3C8112CE26536B9F0063AF30 /* BasicBookData.swift in Sources */,
 				3C8112C1265362C50063AF30 /* BasicBookCVC.swift in Sources */,
 				3C8112BC26535F2C0063AF30 /* BasicBookTVC.swift in Sources */,
 				3C383DD4265387BF00C47952 /* Extentions+UIFont.swift in Sources */,
 				3C94206E2657CA96000788F4 /* PageThreeVC.swift in Sources */,
-				3C383DDE26539D3B00C47952 /* TopicBookCVC.swift in Sources */,
+				3C383DDE26539D3B00C47952 /* HRTopicBookCVC.swift in Sources */,
 				3C9420732657CDFD000788F4 /* DetailAudioTVC.swift in Sources */,
 				AA4DC95926537DE7009FA74B /* HomeVC.swift in Sources */,
 				AABF7D612658C36C003B17DE /* TopicBookTVC.swift in Sources */,

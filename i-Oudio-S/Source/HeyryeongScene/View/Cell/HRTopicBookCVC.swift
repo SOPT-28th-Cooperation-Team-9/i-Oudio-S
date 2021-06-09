@@ -1,5 +1,5 @@
 //
-//  TopicBookCVC.swift
+//  HRTopicBookCVC.swift
 //  i-Oudio-S
 //
 //  Created by JangHyeRyeong on 2021/05/18.
@@ -7,8 +7,10 @@
 
 import UIKit
 
-class TopicBookCVC: UICollectionViewCell {
+class HRTopicBookCVC: UICollectionViewCell {
 
+    static let identifier = "HRTopicBookCVC"
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var topicLabel: UILabel!
     override func awakeFromNib() {
