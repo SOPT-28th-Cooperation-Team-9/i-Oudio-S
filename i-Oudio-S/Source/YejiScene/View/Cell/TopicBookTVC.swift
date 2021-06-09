@@ -24,12 +24,12 @@ class TopicBookTVC: UITableViewCell {
         }
     }
     
-    var topicList: [topicDataModel] = [
-           topicDataModel(topicImage: "topicImage1", topicName: "소설"),
-           topicDataModel(topicImage: "topicImage2", topicName: "시/에세이"),
-           topicDataModel(topicImage: "topicImage3", topicName: "인문"),
-           topicDataModel(topicImage: "topicImage4", topicName: "사회/역사/문화"),
-           topicDataModel(topicImage: "topicImage5", topicName: "경제/경영"),
+    var topicList: [TopicDataModel] = [
+        TopicDataModel(topicImage: "topicImage1", topicName: "소설"),
+        TopicDataModel(topicImage: "topicImage2", topicName: "시/에세이"),
+        TopicDataModel(topicImage: "topicImage3", topicName: "인문"),
+        TopicDataModel(topicImage: "topicImage4", topicName: "사회/역사/문화"),
+        TopicDataModel(topicImage: "topicImage5", topicName: "경제/경영"),
        ]
     
     override func awakeFromNib() {

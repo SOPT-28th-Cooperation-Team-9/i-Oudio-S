@@ -51,6 +51,7 @@
 		3C94206E2657CA96000788F4 /* PageThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C94206D2657CA96000788F4 /* PageThreeVC.swift */; };
 		3C9420732657CDFD000788F4 /* DetailAudioTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9420712657CDFD000788F4 /* DetailAudioTVC.swift */; };
 		3C9420742657CDFD000788F4 /* DetailAudioTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9420722657CDFD000788F4 /* DetailAudioTVC.xib */; };
+		3CB349352670A82200EB1726 /* TopicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB349342670A82200EB1726 /* TopicDataModel.swift */; };
 		4F7A07542652D86700206472 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A07532652D86700206472 /* TabbarController.swift */; };
 		4F831E4A26518A6200676684 /* JSHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E4926518A6200676684 /* JSHomeVC.swift */; };
 		4F831E4C26518A6E00676684 /* Jinseok.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E4B26518A6E00676684 /* Jinseok.storyboard */; };
@@ -85,8 +86,6 @@
 		AA4DC96226538804009FA74B /* SnsBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC96026538804009FA74B /* SnsBookTVC.xib */; };
 		AA4DC96A26538E1A009FA74B /* SnsBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */; };
 		AA4DC96B26538E1A009FA74B /* SnsBookCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */; };
-		4FED5A8826559A3F0035ED16 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED5A8726559A3F0035ED16 /* Book.swift */; };
-		AABF7D302657A456003B17DE /* TopicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF7D2F2657A456003B17DE /* TopicDataModel.swift */; };
 		AABF7D612658C36C003B17DE /* TopicBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF7D5F2658C36C003B17DE /* TopicBookTVC.swift */; };
 		AABF7D622658C36C003B17DE /* TopicBookTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABF7D602658C36C003B17DE /* TopicBookTVC.xib */; };
 		AABF7D6A2658C52E003B17DE /* TopicBookCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF7D682658C52E003B17DE /* TopicBookCVC.swift */; };
@@ -139,6 +138,7 @@
 		3C94206D2657CA96000788F4 /* PageThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageThreeVC.swift; sourceTree = "<group>"; };
 		3C9420712657CDFD000788F4 /* DetailAudioTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAudioTVC.swift; sourceTree = "<group>"; };
 		3C9420722657CDFD000788F4 /* DetailAudioTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAudioTVC.xib; sourceTree = "<group>"; };
+		3CB349342670A82200EB1726 /* TopicDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDataModel.swift; sourceTree = "<group>"; };
 		4F7A07532652D86700206472 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		4F831E4926518A6200676684 /* JSHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSHomeVC.swift; sourceTree = "<group>"; };
 		4F831E4B26518A6E00676684 /* Jinseok.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jinseok.storyboard; sourceTree = "<group>"; };
@@ -173,8 +173,6 @@
 		AA4DC96026538804009FA74B /* SnsBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnsBookTVC.xib; sourceTree = "<group>"; };
 		AA4DC96826538E1A009FA74B /* SnsBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnsBookCVC.swift; sourceTree = "<group>"; };
 		AA4DC96926538E1A009FA74B /* SnsBookCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnsBookCVC.xib; sourceTree = "<group>"; };
-		4FED5A8726559A3F0035ED16 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		AABF7D2F2657A456003B17DE /* TopicDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopicDataModel.swift; path = ../../../../../TopicDataModel.swift; sourceTree = "<group>"; };
 		AABF7D5F2658C36C003B17DE /* TopicBookTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookTVC.swift; sourceTree = "<group>"; };
 		AABF7D602658C36C003B17DE /* TopicBookTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicBookTVC.xib; sourceTree = "<group>"; };
 		AABF7D682658C52E003B17DE /* TopicBookCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBookCVC.swift; sourceTree = "<group>"; };
@@ -477,8 +475,8 @@
 		AA4DC8EF26517F55009FA74B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3CB349342670A82200EB1726 /* TopicDataModel.swift */,
 				AA4DC94B2652D265009FA74B /* BookDataModel.swift */,
-				AABF7D2F2657A456003B17DE /* TopicDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -634,6 +632,7 @@
 				3C20080C2652B7F800C0FAAF /* Extentions+UIColor.swift in Sources */,
 				4F7A07542652D86700206472 /* TabbarController.swift in Sources */,
 				3C9420642657B2E7000788F4 /* DetailHeaderCVC.swift in Sources */,
+				3CB349352670A82200EB1726 /* TopicDataModel.swift in Sources */,
 				3C9420682657C9AF000788F4 /* PageVC.swift in Sources */,
 				4F831E6826519FB700676684 /* SmallRectCVC.swift in Sources */,
 				3C680ED42658CA92003A067D /* TopicBookData.swift in Sources */,
@@ -644,7 +643,6 @@
 				3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */,
 				AA4DC94C2652D265009FA74B /* BookDataModel.swift in Sources */,
 				AA4DC9332652670C009FA74B /* BookTVC.swift in Sources */,
-				AABF7D302657A456003B17DE /* TopicDataModel.swift in Sources */,
 				AA4DC919265232F1009FA74B /* HeaderTVC.swift in Sources */,
 				3C0E0F92264FA92700AB9405 /* AppDelegate.swift in Sources */,
 				4F831E64265197F700676684 /* AudioTVC.swift in Sources */,
