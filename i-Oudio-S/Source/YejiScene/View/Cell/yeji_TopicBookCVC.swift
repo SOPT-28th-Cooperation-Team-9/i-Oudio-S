@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TopicBookCVC: UICollectionViewCell {
+class yeji_TopicBookCVC: UICollectionViewCell {
 
     @IBOutlet weak var topicImageView: UIImageView!
     @IBOutlet weak var topicName: UILabel! {

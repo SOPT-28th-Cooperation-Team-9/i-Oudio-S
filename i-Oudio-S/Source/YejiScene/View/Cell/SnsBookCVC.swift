@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SnsBookCVC: UICollectionViewCell {
     
@@ -63,9 +64,7 @@ class SnsBookCVC: UICollectionViewCell {
                  author: String,
                  price: String) {
         
-        if let image = UIImage(named: bookImage) {
-            bookImageView.image = image
-        }
+        bookImageView.kf.setImage(with: URL(string: bookImage))
         bookExplainLabel.text = bookExplain
         bookTitleLabel.text = bookTitle
         authorTextView.text = author

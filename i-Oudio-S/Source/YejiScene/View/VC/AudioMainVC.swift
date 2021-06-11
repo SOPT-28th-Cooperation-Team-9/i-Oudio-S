@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AudioMainVC: ViewController {
 
@@ -13,35 +14,32 @@ class AudioMainVC: ViewController {
         didSet {
             MainTableView.delegate = self
             MainTableView.dataSource = self
-            MainTableView.backgroundColor = UIColor(red: (33 / 255), green: (33 / 255), blue: (33 / 255), alpha: 1.0)
+            MainTableView.backgroundColor = .mainGrayBackground
         }
     }
     
-    var bookList: [BookDataModel] = [
-        BookDataModel(bookImage: "bookImage1", bookTitle: "데미안 (민음사 세계문학, 완독...", author: "헤르만헤세 저 최승훈 외 1인 낭독", runningTime: "1시간 57분", price: "대여 2700원"),
-        BookDataModel(bookImage: "bookImage2", bookTitle: "데미안 (민음사 세계문학, 완독...", author: "헤르만헤세 저 최승훈 외 1인 낭독", runningTime: "1시간 57분", price: "대여 2700원"),
-        BookDataModel(bookImage: "bookImage3", bookTitle: "데미안 (민음사 세계문학, 완독...", author: "헤르만헤세 저 최승훈 외 1인 낭독", runningTime: "1시간 57분", price: "대여 2700원"),
-        BookDataModel(bookImage: "bookImage4", bookTitle: "데미안 (민음사 세계문학, 완독...", author: "헤르만헤세 저 최승훈 외 1인 낭독", runningTime: "1시간 57분", price: "대여 2700원")
-    ]
-    
+    private var handler: ((Result<MainDataModel, Error>) -> Void)!
+    private var bookList: [BookDataModel]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerXib()
 
-        view.backgroundColor = UIColor(red: (33 / 255), green: (33 / 255), blue: (33 / 255), alpha: 1.0)
+        view.backgroundColor = .mainGrayBackground
     }
     
     private func registerXib() {
         let headerTVC = UINib(nibName: "HeaderTVC", bundle: nil)
         MainTableView.register(headerTVC, forCellReuseIdentifier: "HeaderTVC")
+        
         let bookTVC = UINib(nibName: "BookTVC", bundle: nil)
         MainTableView.register(bookTVC, forCellReuseIdentifier: "BookTVC")
-        MainTableView.register(bookTVC, forCellReuseIdentifier: "BookTVC")
+
         let snsBookTVC = UINib(nibName: "SnsBookTVC", bundle: nil)
         MainTableView.register(snsBookTVC, forCellReuseIdentifier: "SnsBookTVC")
-        let topicTVC = UINib(nibName: "TopicBookTVC", bundle: nil)
-        MainTableView.register(topicTVC, forCellReuseIdentifier: "TopicBookTVC")
+        
+        let topicTVC = UINib(nibName: "yeji_TopicBookTVC", bundle: nil)
+        MainTableView.register(topicTVC, forCellReuseIdentifier: "yeji_TopicBookTVC")
     }
 }
 
@@ -78,30 +76,67 @@ extension AudioMainVC : UITableViewDataSource {
         switch indexPath.row {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderTVC") as? HeaderTVC else { return UITableViewCell() }
-            cell.setData(headerImage: "rectangle1057", title: "'유퀴즈' 출연 김범석 의사의 \n<어떤 죽음이 삶에게 말했다>", author: "김범석 저\n김범석 낭독", subTitle: "오늘만 무료! '수요 오디오 책방'" )
+            handler = { result in
+                switch result {
+                case .success(let mainData):
+                    cell.setData(headerImage: mainData.choiceBook![0].bookImage, title: mainData.choiceBook![0].bookTitle, author: "김범석 저\n김범석 낭독", subTitle: "오늘만 무료! '수요 오디오 책방'" )
+                case .failure(let err):
+                    print(err)
+                }
+            }
             cell.selectionStyle = .none
+            MainService.shared.getAllBook(completion: handler)
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "BookTVC") as? BookTVC else { return UITableViewCell() }
+            handler = {
+                result in
+                switch result {
+                case .success(let mainData):
+                    cell.setData(bookList: mainData.worldLiterature!)
+                case .failure(let err):
+                    print(err)
+                }
+            }
+            MainService.shared.getAllBook(completion: handler)
             cell.registerXib()
             cell.titleLabel.text = "민음사 세계문학 10권 70% 할인"
             cell.bookCollectionView.backgroundColor = .mainGrayBackground
-            cell.setData(bookList: bookList)
             cell.selectionStyle = .none
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "SnsBookTVC") as? SnsBookTVC else { return UITableViewCell() }
+            handler = {
+                result in
+                switch result {
+                case .success(let mainData):
+                    cell.setData(snsBookList: mainData.topicBook!)
+                case .failure(let err):
+                    print(err)
+                }
+            }
+            MainService.shared.getAllBook(completion: handler)
+            cell.titleLabel.text = "요즘 SNS에서 화두인 책"
             cell.selectionStyle = .none
             return cell
         case 3:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "TopicBookTVC") as? TopicBookTVC else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "yeji_TopicBookTVC") as? yeji_TopicBookTVC else { return UITableViewCell() }
             cell.selectionStyle = .none
             return cell
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "BookTVC") as? BookTVC else { return UITableViewCell() }
+            handler = {
+                result in
+                switch result {
+                case .success(let mainData):
+                    cell.setData(bookList: mainData.poem!)
+                case .failure(let err):
+                    print(err)
+                }
+            }
+            MainService.shared.getAllBook(completion: handler)
             cell.registerXib()
             cell.titleLabel.text = "새로 나온 시집"
-            cell.setData(bookList: bookList)
             cell.backgroundColor = .black
             cell.bookCollectionView.backgroundColor = .black
             cell.selectionStyle = .none

@@ -11,7 +11,6 @@ class SnsBookTVC: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
-            titleLabel.text = "요즘 SNS에서 화두인 책"
             titleLabel.font = UIFont.myBoldSystemFont(ofSize: 17)
             titleLabel.textColor = .white
         }
@@ -32,6 +31,8 @@ class SnsBookTVC: UITableViewCell {
         }
     }
     
+    var snsBookList : [BookDataModel] = []
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -50,6 +51,12 @@ class SnsBookTVC: UITableViewCell {
         bookCollectionView.register(snsBookCVC, forCellWithReuseIdentifier: "SnsBookCVC")
     }
     
+    func setData(snsBookList: [BookDataModel]) {
+        print(snsBookList)
+        self.snsBookList = snsBookList
+        self.bookCollectionView.reloadData()
+    }
+    
 }
 
 extension SnsBookTVC : UICollectionViewDelegate {
@@ -58,7 +65,7 @@ extension SnsBookTVC : UICollectionViewDelegate {
 
 extension SnsBookTVC : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return snsBookList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -66,9 +73,8 @@ extension SnsBookTVC : UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
-        cell.setData(bookImage: "snsBook", bookExplain: "김영하 작가가 함께 읽은", bookTitle: "어린이라는 세계", author: "김소영 저\n여민정 낭독", price: "대여 7,000원")
+        cell.setData(bookImage: snsBookList[indexPath.row].bookImage, bookExplain: "김영하 작가가 함께 읽은", bookTitle: snsBookList[indexPath.row].bookTitle, author: snsBookList[indexPath.row].author, price: "대여 \(snsBookList[indexPath.row].rentPrice)원")
 
-        
         return cell
     }
     
