@@ -23,9 +23,14 @@ class AudioMainVC: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = true
         registerXib()
-
         view.backgroundColor = .mainGrayBackground
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     private func registerXib() {
@@ -99,8 +104,18 @@ extension AudioMainVC : UITableViewDataSource {
                 }
             }
             MainService.shared.getAllBook(completion: handler)
+            
             cell.registerXib()
             cell.titleLabel.text = "민음사 세계문학 10권 70% 할인"
+            cell.selectedBookDataAction = { (bookModelData) in
+                print("selectedBookDataAction")
+                let storyboard = UIStoryboard(name: "HRAudio", bundle: nil)
+                guard let nextVC = storyboard.instantiateViewController(identifier: DetailBookVC.identifier) as? DetailBookVC else {
+                    return
+                }
+                nextVC.bookModelData = bookModelData
+                self.navigationController?.pushViewController(nextVC, animated: true)
+            }
             cell.bookCollectionView.backgroundColor = .mainGrayBackground
             cell.selectionStyle = .none
             return cell

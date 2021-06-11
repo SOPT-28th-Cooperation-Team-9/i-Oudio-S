@@ -33,6 +33,7 @@ class BookTVC: UITableViewCell {
     }
     
     var bookList: [BookDataModel] = []
+    var selectedBookDataAction: ((BookDataModel) -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -55,11 +56,15 @@ class BookTVC: UITableViewCell {
     }
     
     
+  
 }
 
 
 extension BookTVC: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedBookData = bookList[indexPath.row]
+        selectedBookDataAction?(selectedBookData)
+    }
 }
 
 extension BookTVC: UICollectionViewDataSource {

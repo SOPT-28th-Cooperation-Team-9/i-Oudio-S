@@ -11,6 +11,7 @@ class DetailBookVC: UIViewController {
 
     static let identifier = "DetailBookVC"
     var bookData: BasicBookData?
+    var bookModelData: BookDataModel?
     @IBOutlet weak var mainCollectionView: UICollectionView!
     
     @IBOutlet weak var detaileTableView: UITableView!
@@ -31,11 +32,22 @@ class DetailBookVC: UIViewController {
         self.navigationController?.navigationBar.tintColor = .white
          
         let label = UILabel()
-        label.text = bookData?.title
+        label.text = getBookTitle()
         label.textColor = UIColor.white
         label.font = UIFont.myBoldSystemFont(ofSize: 25)
         label.textAlignment = .left
         self.navigationItem.titleView = label
+    }
+    
+    func getBookTitle() -> String{
+        if let book = bookData {
+            return book.title
+        }
+        
+        if let book = bookModelData{
+            return book.bookTitle
+        }
+        return ""
     }
 
     func registerXib(){
@@ -66,7 +78,13 @@ extension DetailBookVC: UICollectionViewDataSource{
             return UICollectionReusableView()
         }
         
-        headerView.setContent(book: bookData!)
+        if let book = bookData {
+            headerView.setContent(book: book)
+        }
+        
+        if let book = bookModelData{
+            headerView.setContent(book: book)
+        }
         
         return headerView
     }
@@ -121,7 +139,6 @@ extension DetailBookVC: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = detaileTableView.dequeueReusableCell(withIdentifier: DetailAudioTVC.identifier) as! DetailAudioTVC
-        
         return cell
     }
     

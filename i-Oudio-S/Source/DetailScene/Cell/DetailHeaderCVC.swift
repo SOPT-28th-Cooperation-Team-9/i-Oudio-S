@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailHeaderCVC: UICollectionViewCell {
     
@@ -25,11 +26,19 @@ class DetailHeaderCVC: UICollectionViewCell {
         bookImageView.image = UIImage(named: book.imageName)
         titleLabel.text = book.title
         authorLabel.text = book.author
-        publishLabel.text = "믿음사"
+        publishLabel.text = "민음사"
         playNumberLabel.text = "81,614"
-        
         setUI()
-        
+    }
+    
+    func setContent(book: BookDataModel){
+        bookImageView.kf.setImage(with: URL(string: book.bookImage))
+        //bookImageView.image = UIImage(named: book.bookImage)
+        titleLabel.text = book.bookTitle
+        authorLabel.text = book.author
+        publishLabel.text = "민음사"
+        playNumberLabel.text = "81,614"
+        setUI()
     }
     
     func setUI(){
