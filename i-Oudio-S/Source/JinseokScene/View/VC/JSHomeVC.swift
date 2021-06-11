@@ -16,28 +16,35 @@ class JSHomeVC: UIViewController {
     @IBOutlet weak var mainBookSubTitle: UILabel!
     @IBOutlet weak var mainTV: UITableView!
     @IBOutlet weak var mainTHV: UIView!
-    
+
     private let sections: [String] = ["믿음사 세계문학 10권 70% 할인","요즘 SNS에서 화두인 책", "주제별 오디오북", "새로나온 시집"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getMainPages()
         setUI()
-        mainTV.tableFooterView = UIView()
-        mainTV.tableHeaderView = mainTHV
-        mainTV.separatorStyle = .none
-        mainTV.rowHeight = UITableView.automaticDimension
+        setResgister()
+    }
+
+    // MARK: - Navigation
+    
+    func setResgister(){
+        mainTV.delegate = self
+        mainTV.dataSource = self
+    
         mainTV.register(UINib(nibName: DiscountTVC.identifier, bundle: nil), forCellReuseIdentifier: DiscountTVC.identifier)
         mainTV.register(UINib(nibName: TrendTVC.identifier, bundle: nil), forCellReuseIdentifier: TrendTVC.identifier)
         mainTV.register(UINib(nibName: AudioTVC.identifier, bundle: nil), forCellReuseIdentifier: AudioTVC.identifier)
 
-        
-        mainTV.delegate = self
-        mainTV.dataSource = self
     }
-
-    // MARK: - Navigation
     func setUI(){
+        //mainTV.tableHeaderView.hei
+        mainTV.separatorStyle = .none
+        mainTV.tableFooterView = UIView()
+        mainTV.tableHeaderView = mainTHV
+        mainTV.rowHeight = UITableView.automaticDimension
+        
         mainBookView.backgroundColor = UIColor.mainBlue
         
         mainTitle.textColor = UIColor.white
@@ -54,12 +61,45 @@ class JSHomeVC: UIViewController {
         mainBookSubTitle.textColor = UIColor.white
         mainBookSubTitle.text = "오늘만 무료! '수요 오디오 책방'"
         mainBookSubTitle.font = UIFont.myBoldSystemFont(ofSize: 14)
+    }
+    
+    func getMainPages(){
+        print("vv")
+        jinseok_APIService.shared.getMainPages{ result in
+            print("aa")
+            switch result{
+            case .success(let data) :
+                if let list = data as? jinseok_BookResponseData{
+                    print(list.choiceBook[0].title)
+                    print(list.topicBook[0].title)
+                }
+                //self.updateData()
+            case .requestErr(_) : break
+            case .serverErr: break
+            case .networkFail: break
+            case .pathErr: break
+            }
+        }
+    }
+    
+    func updateData(){
         
+        self.mainTV.reloadData()
     }
 }
 
 extension JSHomeVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        let width = UIScreen.main.bounds.width
+//
+//        switch indexPath.row{
+//        case 0: return width * (314/375)
+//        case 1: return width * (262/375)
+//        case 2: return width * (164/375)
+//        case 3: return width * (314/375)
+//        default: return 0
+//        }
+        
         switch indexPath.row{
         case 0: return 314
         case 1: return 262

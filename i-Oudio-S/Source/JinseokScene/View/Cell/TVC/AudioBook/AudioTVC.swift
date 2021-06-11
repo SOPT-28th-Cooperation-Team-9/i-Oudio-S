@@ -11,6 +11,17 @@ class AudioTVC: UITableViewCell {
     
     static let identifier = "AudioTVC"
     
+    var bookList : [jinseok_BookData] = []
+    var books : [jinseok_BookData]{
+        get {
+            return bookList
+        }
+        set(newVal){
+            bookList = newVal
+            self.collectionView.reloadData()
+        }
+    }
+    
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -18,7 +29,7 @@ class AudioTVC: UITableViewCell {
         super.awakeFromNib()
         
         setUI()
-        
+        setBook()
         collectionView.delegate = self
         collectionView.dataSource = self
         
@@ -30,6 +41,8 @@ class AudioTVC: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+    }
+    func setBook(){
     }
     func setUI(){
         title.textColor = UIColor.white
@@ -71,7 +84,7 @@ extension AudioTVC : UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RoundCVC.identifier, for: indexPath) as? RoundCVC else {return UICollectionViewCell()}
-        
+    
         return cell
     }
 }
