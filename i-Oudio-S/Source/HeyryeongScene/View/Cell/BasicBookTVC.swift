@@ -12,9 +12,10 @@ class BasicBookTVC: UITableViewCell {
     static let identifier = "BasicBookTVC"
     
     @IBOutlet weak var plusButton: UIButton!
-    var bookList :[BasicBookData] = []
+    var bookList: [BasicBookData] = []
     var selectedBook: BasicBookData?
-    var selecteBookAction: ((BasicBookData) -> (Bool))?
+    var selecteBookAction: ((BasicBookData) -> Void)?
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -52,10 +53,6 @@ class BasicBookTVC: UITableViewCell {
     
     func setTitleText(title: String){
         titleLabel.text = title
-    }
-    
-    func setBookListData(books: [BasicBookData]){
-        bookList = books
     }
     
     func setDelegate(){
@@ -108,6 +105,7 @@ extension BasicBookTVC: UICollectionViewDelegate{
         print("BasicBookTVC에서 불림")
         selectedBook = bookList[indexPath.row]
         selecteBookAction?(selectedBook!)
+      
     }
 
 }
