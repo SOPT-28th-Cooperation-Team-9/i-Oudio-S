@@ -33,6 +33,7 @@ class BookTVC: UITableViewCell {
     }
     
     var bookList: [BookDataModel] = []
+    var selectedBookDataAction: ((BookDataModel) -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
