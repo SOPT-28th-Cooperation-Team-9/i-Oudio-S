@@ -11,6 +11,17 @@ class TrendTVC : UITableViewCell {
     
     static let identifier = "TrendTVC"
     
+    var bookList : [jinseok_BookData] = []
+    var books : [jinseok_BookData]{
+        get {
+            return bookList
+        }
+        set(newVal){
+            bookList = newVal
+            self.collectionView.reloadData()
+        }
+    }
+    
     @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!

@@ -22,7 +22,6 @@
 		3C2008192652BD2400C0FAAF /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008122652BD2400C0FAAF /* OFL.txt */; };
 		3C20081A2652BD2400C0FAAF /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008132652BD2400C0FAAF /* NotoSansKR-Black.otf */; };
 		3C20081C2652BD2400C0FAAF /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2008152652BD2400C0FAAF /* NotoSansKR-Regular.otf */; };
-		3C20081E2652BD4100C0FAAF /* Extentions+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */; };
 		3C383DD4265387BF00C47952 /* Extentions+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20081D2652BD4100C0FAAF /* Extentions+UIFont.swift */; };
 		3C383DD72653892100C47952 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C383DD5265388B200C47952 /* NotoSansKR-Medium.otf */; };
 		3C383DDA26539C7900C47952 /* HRTopicBookTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C383DD826539C7900C47952 /* HRTopicBookTVC.swift */; };
@@ -52,6 +51,13 @@
 		3C94206E2657CA96000788F4 /* PageThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C94206D2657CA96000788F4 /* PageThreeVC.swift */; };
 		3C9420732657CDFD000788F4 /* DetailAudioTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9420712657CDFD000788F4 /* DetailAudioTVC.swift */; };
 		3C9420742657CDFD000788F4 /* DetailAudioTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9420722657CDFD000788F4 /* DetailAudioTVC.xib */; };
+		3CB349352670A82200EB1726 /* TopicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB349342670A82200EB1726 /* TopicDataModel.swift */; };
+		4F621FA62658CE1E00703135 /* datatestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F621FA52658CE1E00703135 /* datatestVC.swift */; };
+		4F6BDE402667716200E8B1D9 /* jinseok_APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BDE3F2667716200E8B1D9 /* jinseok_APIConstants.swift */; };
+		4F6BDE422667719800E8B1D9 /* jinseok_NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BDE412667719800E8B1D9 /* jinseok_NetworkResult.swift */; };
+		4F6BDE442667723A00E8B1D9 /* jinseok_APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BDE432667723A00E8B1D9 /* jinseok_APIService.swift */; };
+		4F6BDE46266773D500E8B1D9 /* jinseok_BookResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BDE45266773D500E8B1D9 /* jinseok_BookResponseData.swift */; };
+		4F6BDE482667748100E8B1D9 /* jinseok_NetworkHeaderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6BDE472667748100E8B1D9 /* jinseok_NetworkHeaderKey.swift */; };
 		4F7A07542652D86700206472 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A07532652D86700206472 /* TabbarController.swift */; };
 		4F831E4A26518A6200676684 /* JSHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E4926518A6200676684 /* JSHomeVC.swift */; };
 		4F831E4C26518A6E00676684 /* Jinseok.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E4B26518A6E00676684 /* Jinseok.storyboard */; };
@@ -144,6 +150,12 @@
 		3C94206D2657CA96000788F4 /* PageThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageThreeVC.swift; sourceTree = "<group>"; };
 		3C9420712657CDFD000788F4 /* DetailAudioTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAudioTVC.swift; sourceTree = "<group>"; };
 		3C9420722657CDFD000788F4 /* DetailAudioTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAudioTVC.xib; sourceTree = "<group>"; };
+		4F621FA52658CE1E00703135 /* datatestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datatestVC.swift; sourceTree = "<group>"; };
+		4F6BDE3F2667716200E8B1D9 /* jinseok_APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jinseok_APIConstants.swift; sourceTree = "<group>"; };
+		4F6BDE412667719800E8B1D9 /* jinseok_NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jinseok_NetworkResult.swift; sourceTree = "<group>"; };
+		4F6BDE432667723A00E8B1D9 /* jinseok_APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jinseok_APIService.swift; sourceTree = "<group>"; };
+		4F6BDE45266773D500E8B1D9 /* jinseok_BookResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jinseok_BookResponseData.swift; sourceTree = "<group>"; };
+		4F6BDE472667748100E8B1D9 /* jinseok_NetworkHeaderKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jinseok_NetworkHeaderKey.swift; sourceTree = "<group>"; };
 		3CB349342670A82200EB1726 /* TopicDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDataModel.swift; sourceTree = "<group>"; };
 		4F7A07532652D86700206472 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		4F831E4926518A6200676684 /* JSHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSHomeVC.swift; sourceTree = "<group>"; };
@@ -204,6 +216,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08AD39A1C68843F00C41474E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFE807C0367D45B90843A2D3 /* Pods_i_Oudio_S.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3C0E0F85264FA92700AB9405 = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +273,7 @@
 				4F831E4626518A4400676684 /* Model */,
 				4F831E4526518A3E00676684 /* View */,
 				4F831E4B26518A6E00676684 /* Jinseok.storyboard */,
+				4F621FA52658CE1E00703135 /* datatestVC.swift */,
 			);
 			path = JinseokScene;
 			sourceTree = "<group>";
@@ -270,6 +291,7 @@
 		3C0E0FA8264FAADC00AB9405 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4F6BDE3E2667713C00E8B1D9 /* API */,
 				3C20080D2652BD2400C0FAAF /* Font */,
 				3C0E0F91264FA92700AB9405 /* AppDelegate.swift */,
 				3C0E0F93264FA92700AB9405 /* SceneDelegate.swift */,
@@ -403,6 +425,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4F6BDE3E2667713C00E8B1D9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4F6BDE3F2667716200E8B1D9 /* jinseok_APIConstants.swift */,
+				4F6BDE432667723A00E8B1D9 /* jinseok_APIService.swift */,
+				4F6BDE412667719800E8B1D9 /* jinseok_NetworkResult.swift */,
+				4F6BDE45266773D500E8B1D9 /* jinseok_BookResponseData.swift */,
+				4F6BDE472667748100E8B1D9 /* jinseok_NetworkHeaderKey.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		4F7A074A2652C8A700206472 /* CVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,7 +481,6 @@
 		4F831E4626518A4400676684 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4FED5A8726559A3F0035ED16 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -654,7 +687,6 @@
 				AA4DC96226538804009FA74B /* SnsBookTVC.xib in Resources */,
 				AABF7D622658C36C003B17DE /* yeji_TopicBookTVC.xib in Resources */,
 				AA4DC91A265232F1009FA74B /* HeaderTVC.xib in Resources */,
-				3C0E0FAD264FAB3500AB9405 /* HRAudio.storyboard in Resources */,
 				4F831E77265254E200676684 /* RoundCVC.xib in Resources */,
 				3C94205A26575CE8000788F4 /* Main.storyboard in Resources */,
 				4F831E65265197F700676684 /* AudioTVC.xib in Resources */,
@@ -727,6 +759,7 @@
 				3C0E0FAB264FAB2400AB9405 /* AudioBookHomeVC.swift in Sources */,
 				3C680ED32658CA92003A067D /* BasicBookData.swift in Sources */,
 				3C0E0FAB264FAB2400AB9405 /* AudioBookHomeVC.swift in Sources */,
+				3C383DE126539EC600C47952 /* TopicBookData.swift in Sources */,
 				3C20080C2652B7F800C0FAAF /* Extentions+UIColor.swift in Sources */,
 				4F7A07542652D86700206472 /* TabbarController.swift in Sources */,
 				3C9420642657B2E7000788F4 /* DetailHeaderCVC.swift in Sources */,
@@ -741,13 +774,17 @@
 				4FED5A8826559A3F0035ED16 /* Book.swift in Sources */,
 				AAA080FE265AD0C300B3CBB6 /* NetworkResult.swift in Sources */,
 				AAA080F4265ABCB800B3CBB6 /* MainDataModel.swift in Sources */,
+				4F6BDE402667716200E8B1D9 /* jinseok_APIConstants.swift in Sources */,
 				3C0E0F96264FA92700AB9405 /* ViewController.swift in Sources */,
 				AA4DC94C2652D265009FA74B /* BookDataModel.swift in Sources */,
+				4F621FA62658CE1E00703135 /* datatestVC.swift in Sources */,
 				AA4DC9332652670C009FA74B /* BookTVC.swift in Sources */,
 				AA4DC919265232F1009FA74B /* HeaderTVC.swift in Sources */,
+				4F6BDE442667723A00E8B1D9 /* jinseok_APIService.swift in Sources */,
 				3C0E0F92264FA92700AB9405 /* AppDelegate.swift in Sources */,
 				4F831E64265197F700676684 /* AudioTVC.swift in Sources */,
 				4F831E6E265247A300676684 /* LargeRectCVC.swift in Sources */,
+				4F6BDE422667719800E8B1D9 /* jinseok_NetworkResult.swift in Sources */,
 				AA4DC90826519254009FA74B /* AudioMainVC.swift in Sources */,
 				AA4DC95C26537DF4009FA74B /* MyVC.swift in Sources */,
 				AA4DC96A26538E1A009FA74B /* SnsBookCVC.swift in Sources */,
@@ -758,6 +795,7 @@
 				3C383DDA26539C7900C47952 /* HRTopicBookTVC.swift in Sources */,
 				3C94206A2657CA6E000788F4 /* PageOneVC.swift in Sources */,
 				3C94205C265773FD000788F4 /* DetailBookVC.swift in Sources */,
+				4F6BDE46266773D500E8B1D9 /* jinseok_BookResponseData.swift in Sources */,
 				3C85E0FD2653BE63000FA0E7 /* SNSSaleBookCVC.swift in Sources */,
 				3C94206C2657CA7D000788F4 /* PageTwoVC.swift in Sources */,
 				3C85E1012653C393000FA0E7 /* SNSSaleBookTVC.swift in Sources */,
@@ -771,9 +809,9 @@
 				3C9420732657CDFD000788F4 /* DetailAudioTVC.swift in Sources */,
 				AA4DC95926537DE7009FA74B /* HomeVC.swift in Sources */,
 				AABF7D612658C36C003B17DE /* yeji_TopicBookTVC.swift in Sources */,
+				4F6BDE482667748100E8B1D9 /* jinseok_NetworkHeaderKey.swift in Sources */,
 				AA4DC92626525DB6009FA74B /* LineSpacing+UILabel.swift in Sources */,
 				AA4DC94726526C52009FA74B /* BookCVC.swift in Sources */,
-				3C20081E2652BD4100C0FAAF /* Extentions+UIFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
