@@ -10,7 +10,17 @@ import UIKit
 class AudioTVC: UITableViewCell {
     
     static let identifier = "AudioTVC"
-    private var books : [Book]?
+    
+    var bookList : [jinseok_BookData] = []
+    var books : [jinseok_BookData]{
+        get {
+            return bookList
+        }
+        set(newVal){
+            bookList = newVal
+            self.collectionView.reloadData()
+        }
+    }
     
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -33,14 +43,6 @@ class AudioTVC: UITableViewCell {
         // Configure the view for the selected state
     }
     func setBook(){
-                            
-        self.books?.append(contentsOf: [
-            Book.init(imageName: "book_audio1", title: "소설"),
-            Book.init(imageName: "book_audio2", title: "시,에세이"),
-            Book.init(imageName: "botitledio3", title: "인문"),
-            Book.init(imageName: "book_audio4", title: "사회,역사,문화"),
-            Book.init(imageName: "book_audio5", title: "경제,경영")
-        ])
     }
     func setUI(){
         title.textColor = UIColor.white
@@ -82,10 +84,6 @@ extension AudioTVC : UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RoundCVC.identifier, for: indexPath) as? RoundCVC else {return UICollectionViewCell()}
-        
-        if let imageName = books?[indexPath.row].imageName, let titleName = books?[indexPath.row].title{
-            cell.setData(imageName, titleName)
-        }
     
         return cell
     }

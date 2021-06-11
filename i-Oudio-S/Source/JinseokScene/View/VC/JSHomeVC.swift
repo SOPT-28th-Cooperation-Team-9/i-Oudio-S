@@ -16,16 +16,13 @@ class JSHomeVC: UIViewController {
     @IBOutlet weak var mainBookSubTitle: UILabel!
     @IBOutlet weak var mainTV: UITableView!
     @IBOutlet weak var mainTHV: UIView!
-    
-    private var DiscountBooks : [Book] = []
-    private var TrendBooks : [Book] = []
-    private var AudioBook : [Book] = []
-    
+
     private let sections: [String] = ["믿음사 세계문학 10권 70% 할인","요즘 SNS에서 화두인 책", "주제별 오디오북", "새로나온 시집"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getMainPages()
         setUI()
         setResgister()
     }
@@ -64,7 +61,30 @@ class JSHomeVC: UIViewController {
         mainBookSubTitle.textColor = UIColor.white
         mainBookSubTitle.text = "오늘만 무료! '수요 오디오 책방'"
         mainBookSubTitle.font = UIFont.myBoldSystemFont(ofSize: 14)
+    }
+    
+    func getMainPages(){
+        print("vv")
+        jinseok_APIService.shared.getMainPages{ result in
+            print("aa")
+            switch result{
+            case .success(let data) :
+                if let list = data as? jinseok_BookResponseData{
+                    print(list.choiceBook[0].title)
+                    print(list.topicBook[0].title)
+                }
+                //self.updateData()
+            case .requestErr(_) : break
+            case .serverErr: break
+            case .networkFail: break
+            case .pathErr: break
+            }
+        }
+    }
+    
+    func updateData(){
         
+        self.mainTV.reloadData()
     }
 }
 

@@ -14,18 +14,10 @@ class datatestVC: UIViewController {
     @IBOutlet weak var reader: UILabel!
     @IBOutlet weak var price: UILabel!
     
-    var book : Book?
+    var book : jinseok_BookData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        if let b = book{
-            name.text = b.title
-            writer.text = b.writer
-            reader.text = b.reader
-            price.text = b.price
-        }
-        
         // Do any additional setup after loading the view.
     }
     
