@@ -105,18 +105,13 @@ extension AudioBookHomeVC: UITableViewDataSource{
             }
             
             cell.bookList = fictionBooks
-            cell.setTitleText(title: "믿음사 세계문학 10권 70% 할인")
-            print("cell이 셋팅")
+            cell.setTitleText(title: "민음사 세계문학 10권 70% 할인")
             cell.selecteBookAction = { bookData in
                 guard let nextVC = self.storyboard?.instantiateViewController(identifier: DetailBookVC.identifier) as? DetailBookVC else {
-                    return false
+                    return
                 }
                 nextVC.bookData = bookData
-                
                 self.navigationController?.pushViewController(nextVC, animated: true)
-                //self.present(nextVC, animated: true, completion: nil)
-                print("클로져 구현")
-                return true
             }
             
             return cell
@@ -168,22 +163,22 @@ extension AudioBookHomeVC{
     func setFictionBooks(){
         fictionBooks.append(contentsOf:[
                 BasicBookData.init(imageName: "book_fiction1",
-                                       title: "데미안 (믿음사 세계문학, 완독본)",
+                                       title: "데미안 (음사 세계문학, 완독본)",
                                        author: "헤르만 헤세 저\n최승훈 외 1인 낭독",
                                        price: 2700,
                                        time: 659),
                 BasicBookData.init(imageName: "book_fiction2",
-                                   title: "자기만의 방 (믿음사 세계문학, 완독본)",
+                                   title: "자기만의 방 (민음사 세계문학, 완독본)",
                                    author: "버지니아 울프 저\n천지선 낭독",
                                    price: 1_800,
                                    time: 455),
                 BasicBookData.init(imageName: "book_fiction3",
-                                   title: "위대한 유산 (믿음사 세계문학, 완독본)",
+                                   title: "위대한 유산 (민음사 세계문학, 완독본)",
                                    author: "찰스 디킨스 저\n서원석 외 1인 낭독",
                                    price: 6_000,
                                    time: 2756),
                 BasicBookData.init(imageName: "book_fiction4",
-                                   title: "오만과 편견 (믿음사 세계문학, 완독본)",
+                                   title: "오만과 편견 (민음사 세계문학, 완독본)",
                                    author: "제인 오스틴 저\n전해리 외 1인 낭독",
                                    price: 3_600,
                                    time: 1657)
