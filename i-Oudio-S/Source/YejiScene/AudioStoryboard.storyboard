@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t2b-ZG-6OQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GbI-dA-PYM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -14,7 +14,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--예지-->
+        <!--Audio MainVC-->
         <scene sceneID="1b5-CL-3uv">
             <objects>
                 <viewController storyboardIdentifier="AudioMainVC" id="t2b-ZG-6OQ" customClass="AudioMainVC" customModule="i_Oudio_S" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,26 +23,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오디오북" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzs-aL-EXB">
-                                <rect key="frame" x="17" y="61" width="96" height="38"/>
+                                <rect key="frame" x="17" y="105" width="96" height="38"/>
                                 <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcD-sC-XD7">
-                                <rect key="frame" x="338" y="70" width="20" height="22"/>
+                                <rect key="frame" x="338" y="114" width="20" height="22"/>
                                 <state key="normal" image="group421"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrE-6a-fA8">
-                                <rect key="frame" x="376" y="70" width="20" height="22"/>
+                                <rect key="frame" x="376" y="114" width="20" height="22"/>
                                 <state key="normal" image="component29"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="flY-7I-DXt">
-                                <rect key="frame" x="0.0" y="112" width="414" height="648"/>
+                                <rect key="frame" x="0.0" y="156" width="414" height="653"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGW-pH-k0c">
-                                <rect key="frame" x="0.0" y="760" width="414" height="53"/>
+                                <rect key="frame" x="0.0" y="809" width="414" height="53"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="재생목록이 없습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isw-AB-7v6">
                                         <rect key="frame" x="16" y="16" width="142" height="21"/>
@@ -77,14 +77,14 @@
                             <constraint firstItem="DGW-pH-k0c" firstAttribute="leading" secondItem="eWA-5d-gl4" secondAttribute="leading" id="qyh-GO-0vU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="예지" image="subtract" selectedImage="subtract" id="J89-q4-jnx"/>
+                    <navigationItem key="navigationItem" id="2Jr-HL-K3j"/>
                     <connections>
                         <outlet property="MainTableView" destination="flY-7I-DXt" id="9RD-BS-dpr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BfV-ba-CwG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-594" y="946"/>
+            <point key="canvasLocation" x="-94" y="946"/>
         </scene>
         <!--Home-->
         <scene sceneID="wVA-UP-vQD">
@@ -94,7 +94,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwn-yI-cb6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192" y="946"/>
+            <point key="canvasLocation" x="1101.449275362319" y="945.53571428571422"/>
         </scene>
         <!--My-->
         <scene sceneID="Deg-Lf-5q5">
@@ -104,7 +104,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ZX-6R-LKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824" y="945"/>
+            <point key="canvasLocation" x="1734.057971014493" y="944.86607142857133"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2x5-1I-Teo">
@@ -121,7 +121,6 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="t2b-ZG-6OQ" kind="relationship" relationship="viewControllers" id="M1Q-aR-hOc"/>
                         <segue destination="qhK-g4-T6X" kind="relationship" relationship="viewControllers" id="QIs-t5-iNq"/>
                         <segue destination="74h-Et-fce" kind="relationship" relationship="viewControllers" id="cWW-ZU-OPh"/>
                     </connections>
@@ -129,6 +128,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yr9-JD-bOG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="143.47826086956522" y="77.678571428571431"/>
+        </scene>
+        <!--예지-->
+        <scene sceneID="mdh-ew-2iZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GbI-dA-PYM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="예지" image="subtract" selectedImage="subtract" id="J89-q4-jnx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jJV-wL-fQg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="t2b-ZG-6OQ" kind="relationship" relationship="rootViewController" id="71w-mC-wpO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFU-Hk-Cmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-938" y="945"/>
         </scene>
     </scenes>
     <resources>
