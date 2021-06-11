@@ -73,7 +73,6 @@
 		4F831E6F265247A300676684 /* LargeRectCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E6D265247A200676684 /* LargeRectCVC.xib */; };
 		4F831E76265254E200676684 /* RoundCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F831E74265254E200676684 /* RoundCVC.swift */; };
 		4F831E77265254E200676684 /* RoundCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F831E75265254E200676684 /* RoundCVC.xib */; };
-		4FED5A8826559A3F0035ED16 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED5A8726559A3F0035ED16 /* Book.swift */; };
 		AA4DC8F126518187009FA74B /* AudioStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4DC8F026518187009FA74B /* AudioStoryboard.storyboard */; };
 		AA4DC90826519254009FA74B /* AudioMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC90726519254009FA74B /* AudioMainVC.swift */; };
 		AA4DC919265232F1009FA74B /* HeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DC917265232F1009FA74B /* HeaderTVC.swift */; };
@@ -172,7 +171,6 @@
 		4F831E6D265247A200676684 /* LargeRectCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LargeRectCVC.xib; sourceTree = "<group>"; };
 		4F831E74265254E200676684 /* RoundCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCVC.swift; sourceTree = "<group>"; };
 		4F831E75265254E200676684 /* RoundCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundCVC.xib; sourceTree = "<group>"; };
-		4FED5A8726559A3F0035ED16 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		594E5F6B9BEA3F4FE5C4E92D /* Pods-i-Oudio-S.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i-Oudio-S.release.xcconfig"; path = "Target Support Files/Pods-i-Oudio-S/Pods-i-Oudio-S.release.xcconfig"; sourceTree = "<group>"; };
 		913E5AEBD2FF2DB78746CEDB /* Pods_i_Oudio_S.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i_Oudio_S.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4DC8F026518187009FA74B /* AudioStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AudioStoryboard.storyboard; sourceTree = "<group>"; };
@@ -771,7 +769,6 @@
 				4F831E602651911100676684 /* TrendTVC.swift in Sources */,
 				4F831E5C26518FA400676684 /* DiscountTVC.swift in Sources */,
 				4F831E4A26518A6200676684 /* JSHomeVC.swift in Sources */,
-				4FED5A8826559A3F0035ED16 /* Book.swift in Sources */,
 				AAA080FE265AD0C300B3CBB6 /* NetworkResult.swift in Sources */,
 				AAA080F4265ABCB800B3CBB6 /* MainDataModel.swift in Sources */,
 				4F6BDE402667716200E8B1D9 /* jinseok_APIConstants.swift in Sources */,
