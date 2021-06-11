@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HeaderTVC: UITableViewCell {
     
@@ -31,16 +32,13 @@ class HeaderTVC: UITableViewCell {
                  title: String,
                  author: String,
                  subTitle: String) {
-        if let image = UIImage(named: headerImage) {
-            headerImageView.image = image
-        }
+        headerImageView.kf.setImage(with: URL(string: headerImage))
         titleLabel.text = title
-//        titleLabel.font = UIFont.NotoSansFont(weight: .Bold, size: 19)
+        titleLabel.font = UIFont.myBoldSystemFont(ofSize: 19)
         authorLabel.text = author
-//        authorLabel.font = UIFont.NotoSansFont(weight: .Regular, size: 12)
+        authorLabel.font = UIFont.myRegularSystemFont(ofSize: 12)
         subTitleLabel.text = subTitle
-//        subTitleLabel.font = UIFont.NotoSansFont(weight: .Bold, size: 14)
-        
+        subTitleLabel.font = UIFont.myBoldSystemFont(ofSize: 14)
         subTitleLabel.sizeToFit()
     }
     

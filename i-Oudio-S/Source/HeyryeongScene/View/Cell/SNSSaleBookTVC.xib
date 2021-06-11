@@ -18,19 +18,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHN-fX-5U8">
-                        <rect key="frame" x="18" y="34" width="42" height="21"/>
+                        <rect key="frame" x="18" y="0.0" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q10-d9-r8k">
-                        <rect key="frame" x="268" y="29.5" width="39" height="30"/>
+                        <rect key="frame" x="268" y="-4.5" width="39" height="30"/>
                         <state key="normal" title="더보기">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                     </button>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MzA-pR-ZzW">
-                        <rect key="frame" x="8" y="68" width="317" height="134"/>
+                        <rect key="frame" x="8" y="34" width="317" height="168"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K5y-vT-bmm">
                             <size key="itemSize" width="128" height="128"/>
@@ -46,7 +46,7 @@
                     <constraint firstAttribute="trailing" secondItem="Q10-d9-r8k" secondAttribute="trailing" constant="18" id="6RR-qv-nD0"/>
                     <constraint firstItem="MzA-pR-ZzW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="I69-D2-LhG"/>
                     <constraint firstItem="eHN-fX-5U8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="K2b-Jw-8hf"/>
-                    <constraint firstItem="eHN-fX-5U8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="34" id="Pav-7e-nST"/>
+                    <constraint firstItem="eHN-fX-5U8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Pav-7e-nST"/>
                     <constraint firstItem="Q10-d9-r8k" firstAttribute="centerY" secondItem="eHN-fX-5U8" secondAttribute="centerY" id="gL1-tq-ROc"/>
                     <constraint firstAttribute="trailing" secondItem="MzA-pR-ZzW" secondAttribute="trailing" id="srs-Yg-qk9"/>
                     <constraint firstAttribute="bottom" secondItem="MzA-pR-ZzW" secondAttribute="bottom" id="ubb-mK-mpt"/>

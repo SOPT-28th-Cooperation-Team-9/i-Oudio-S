@@ -110,7 +110,5 @@ extension BasicBookTVC: UICollectionViewDelegate{
         selecteBookAction?(selectedBook!)
     }
 
-    
-    
 }
 

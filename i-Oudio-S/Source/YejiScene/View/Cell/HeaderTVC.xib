@@ -27,13 +27,16 @@
                         <rect key="frame" x="0.0" y="16" width="375" height="161"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Two-8E-5f5">
-                                <rect key="frame" x="256" y="-16" width="101" height="117"/>
+                                <rect key="frame" x="276" y="-16" width="81" height="117"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="117" id="QMY-yO-9Ic"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1L-Zm-lvk">
-                                <rect key="frame" x="18" y="18" width="208" height="38"/>
+                                <rect key="frame" x="18" y="18" width="228" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="esE-rc-SpX"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">'유퀴즈' 출연 김범석 의사의

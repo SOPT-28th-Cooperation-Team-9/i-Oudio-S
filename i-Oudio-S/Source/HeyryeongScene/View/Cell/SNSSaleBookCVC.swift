@@ -21,6 +21,7 @@ class SNSSaleBookCVC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        print("로딩됨")
         setUI()
         // Initialization code
     }
@@ -53,7 +54,7 @@ class SNSSaleBookCVC: UICollectionViewCell {
         
     }
     
-    func setcellTitle(title: String){
+    func setCellTitle(title: String){
         cellTitleLabel.text = title
     }
 

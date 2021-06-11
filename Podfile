@@ -6,7 +6,6 @@ target 'i-Oudio-S' do
   use_frameworks!
 
   # Pods for i-Oudio-S
-
-pod 'Alamofire', '~> 5.2'
-
+  pod 'Alamofire', '~> 5.2'
+  pod 'Kingfisher', '~> 6.0'
 end
