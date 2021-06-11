@@ -56,11 +56,15 @@ class BookTVC: UITableViewCell {
     }
     
     
+  
 }
 
 
 extension BookTVC: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedBookData = bookList[indexPath.row]
+        selectedBookDataAction?(selectedBookData)
+    }
 }
 
 extension BookTVC: UICollectionViewDataSource {
