@@ -23,9 +23,14 @@ class AudioMainVC: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = true
         registerXib()
-
         view.backgroundColor = .mainGrayBackground
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     private func registerXib() {
